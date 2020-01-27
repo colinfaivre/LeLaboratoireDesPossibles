@@ -1,0 +1,54 @@
+<template>
+  <v-footer
+    color="primary"
+    inset
+    app
+    class="py-3 d-flex justify-center"
+  >
+  
+    <v-btn
+      href="https://github.com/colinfaivre"
+      target="_blank" 
+      class="mx-1"  
+      text
+      icon 
+      color="secondary"
+    >
+      <v-icon color="secondary">mdi-github-circle</v-icon>
+    </v-btn>
+
+    <v-btn
+      href="mailto:colin.faivre@gmail.com"
+      target="_blank" 
+      class="mx-1"
+      text
+      icon
+      color="secondary"
+    >
+      <v-icon color="secondary">mdi-email</v-icon>
+    </v-btn>
+
+    <v-btn
+      href="https://www.linkedin.com/in/colin-faivre-020498136/"
+      target="_blank"
+      class="mx-1"
+      text
+      icon
+      color="secondary"
+    >
+      <v-icon color="secondary">mdi-linkedin</v-icon>
+    </v-btn>
+
+    <v-btn
+      href="https://www.malt.fr/profile/colinfaivre"
+      target="_blank"
+      class="mx-1"
+      text
+      icon
+      color="secondary"
+    >
+      <img src="@/assets/images/malt-logo-secondary.svg" alt="Malt" height="25px" width="25px">
+    </v-btn>
+    
+  </v-footer>
+</template>
