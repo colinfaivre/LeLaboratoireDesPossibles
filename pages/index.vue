@@ -9,7 +9,7 @@
             align="center"
             justify="center"
         >
-            <div
+            <v-col
                 class="d-flex flex-column align-center justify-center"
             >
                     <img src="@/assets/images/labo-logo.svg" alt="Le laboratoire des possibles">
@@ -27,7 +27,7 @@
                             développée en Vue.js
                         </p>
                     </div>
-            </div>
+            </v-col>
         </v-row>
 
         <v-row
