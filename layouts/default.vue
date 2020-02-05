@@ -52,6 +52,17 @@
             </v-list-item-content>
           </v-list-item>
         </nuxt-link>
+
+        <nuxt-link to="/ar">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon color="secondary">mdi-cube-scan</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Réalité augmentée</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </nuxt-link>
         
         <nuxt-link to="/tech">
           <v-list-item link>
@@ -73,28 +84,6 @@
               <v-list-item-title>Formation</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
-        </nuxt-link>
-
-        <nuxt-link to="/about">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-account</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>A propos</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </nuxt-link>
-
-        <nuxt-link to="/cv">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-file</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Curriculum Vitae</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
         </nuxt-link>
 
         <nuxt-link to="/legal">
