@@ -15,7 +15,7 @@
               <v-icon color="secondary">mdi-briefcase</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Projets professionnels</v-list-item-title>
+              <v-list-item-title>Projets pros</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </nuxt-link>
@@ -26,15 +26,37 @@
               <v-icon color="secondary">mdi-palette</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Projets personnels</v-list-item-title>
+              <v-list-item-title>Projets persos</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </nuxt-link>
 
-        <nuxt-link to="/tech">
+        <nuxt-link to="/games">
           <v-list-item link>
             <v-list-item-action>
               <v-icon color="secondary">mdi-space-invaders</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Jeux</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </nuxt-link>
+
+        <nuxt-link to="/clones">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon color="secondary">mdi-microscope</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Clones</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </nuxt-link>
+        
+        <nuxt-link to="/tech">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon color="secondary">mdi-chip</v-icon>
             </v-list-item-action>
             <v-list-item-content>
               <v-list-item-title>Technologies utilisées</v-list-item-title>
@@ -70,7 +92,7 @@
               <v-icon color="secondary">mdi-file</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Curiculum Vitae</v-list-item-title>
+              <v-list-item-title>Curriculum Vitae</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </nuxt-link>
