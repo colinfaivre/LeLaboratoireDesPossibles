@@ -3,6 +3,7 @@
     <v-row justify="center">
 
       <v-card
+        v-for="project in persoProjects" :key="project.index"
         class="ma-2"
         width="450"
         min-width="320"
@@ -10,91 +11,22 @@
         <v-img
           class="white--text align-end"
           height="250px"
-          :src="require('@/assets/images/perso/mojomatik.jpeg')"
+          :src="require('@/assets/images/screenshots/' + project.screenshot )"
         >
         </v-img>
-        <v-card-title color="primary">Mojomatik</v-card-title>
-
+        <v-card-title color="primary">
+          {{ project.title }}
+        </v-card-title>
         <v-card-text>
-          <div class="text--primary">Un clone de Slack</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          <div class="text--primary">
+            {{ project.subtitle }}
+          </div>
+          <div class="text--grey">
+            {{ project.text }}
+          </div>
         </v-card-text>
-
         <v-card-actions class="ml-2 mb-2">
-         <img :src="require('@/assets/images/tech/vue.png')" alt="vue.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/nuxt.png')" alt="nuxt.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/vuetify.png')" alt="vuetify" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/sass.png')" alt="sass.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/firebase.png')" alt="firebase" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/javascript.png')" alt="javascript" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/material.png')" alt="material design" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/pwa.svg')" alt="progressive web app" height="30px" class="mr-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/colinfaivre.jpeg')"
-        >
-        </v-img>
-        <v-card-title color="primary">colinfaivre.com</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Site vitrine - Artiste</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/sourirepanique.jpeg')"
-        >
-        </v-img>
-        <v-card-title color="primary">sourirepanique.com</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Site vitrine - Groupe</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/adlib.jpg')"
-        >
-        </v-img>
-        <v-card-title color="primary">adlib.com</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Site vitrine - Groupe</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
+          <img  v-for="techno in project.technos" :key="techno.index" :src="require('@/assets/images/tech/' + techno + '.png')" :alt="techno" height="30px" class="mr-2">
         </v-card-actions>
       </v-card>
 
@@ -104,7 +36,11 @@
 
 <script>
 export default {
-  
+  computed: {
+    persoProjects() {
+      return this.$store.getters['projects/persoProjects']
+    }
+  }
 }
 </script>
 

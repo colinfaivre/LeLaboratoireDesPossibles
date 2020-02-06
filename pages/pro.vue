@@ -1,7 +1,9 @@
 <template>
   <v-container fluid>
     <v-row justify="center">
+
       <v-card
+        v-for="project in proProjects" :key="project.index"
         class="ma-2"
         width="450"
         min-width="320"
@@ -9,279 +11,36 @@
         <v-img
           class="white--text align-end"
           height="250px"
-          :src="require('@/assets/images/websites/psycho.png')"
+          :src="require('@/assets/images/screenshots/' + project.screenshot )"
         >
         </v-img>
-        <v-card-title color="primary">jeanyvesgauthier.com</v-card-title>
-
+        <v-card-title color="primary">
+          {{ project.title }}
+        </v-card-title>
         <v-card-text>
-          <div class="text--primary">Site vitrine - Psychanalyste</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          <div class="text--primary">
+            {{ project.subtitle }}
+          </div>
+          <div class="text--grey">
+            {{ project.text }}
+          </div>
         </v-card-text>
-
         <v-card-actions class="ml-2 mb-2">
-          <img :src="require('@/assets/images/tech/vue.png')" alt="vue.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/nuxt.png')" alt="nuxt.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/sass.png')" alt="sass.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/firebase.png')" alt="firebase" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/javascript.png')" alt="javascript" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/material.png')" alt="material design" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/pwa.svg')" alt="progressive web app" height="30px" class="mr-2">
+          <img  v-for="techno in project.technos" :key="techno.index" :src="require('@/assets/images/tech/' + techno + '.png')" :alt="techno" height="30px" class="mr-2">
         </v-card-actions>
       </v-card>
 
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/sapiendo.png')"
-        >
-        </v-img>
-        <v-card-title color="primary">Sapiendo</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Back Office - Site conseil retraite</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-          <img :src="require('@/assets/images/tech/vue.png')" alt="vue.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/vuetify.png')" alt="vuetify" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/sass.png')" alt="sass.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/material.png')" alt="material design" height="30px" class="mr-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/novaccess.png')"
-        >
-        </v-img>
-        <v-card-title color="primary">Novaccess</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Back Office - Application ouvre portails</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-          <img :src="require('@/assets/images/tech/vue.png')" alt="vue.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/typescript.svg')" alt="typescript" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/buefy.png')" alt="buefy" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/sass.png')" alt="sass.js" height="30px" class="mr-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/barnaby.jpg')"
-        >
-        </v-img>
-        <v-card-title color="primary">Barnaby</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Application - Commande de boissons</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-          <img :src="require('@/assets/images/tech/javascript.png')" alt="javascript" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/vue.png')" alt="vue.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/nuxt.png')" alt="nuxt.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/sass.png')" alt="sass.js" height="30px" class="mr-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/glifter.png')"
-        >
-        </v-img>
-        <v-card-title color="primary">Glifter</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Back Office - Gestion articles</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-          <img :src="require('@/assets/images/tech/javascript.png')" alt="javascript" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/vue.png')" alt="vue.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/sass.png')" alt="sass.js" height="30px" class="mr-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/axiom.png')"
-        >
-        </v-img>
-        <v-card-title color="primary">Axiom</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Back Office - Outil communication</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-          <img :src="require('@/assets/images/tech/javascript.png')" alt="javascript" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/vue.png')" alt="vue.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/sass.png')" alt="sass.js" height="30px" class="mr-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/optiquebeaubreuil.png')"
-        >
-        </v-img>
-        <v-card-title color="primary">optiquebeaubreuil.com</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Site vitrine - Opticien</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/optiqueduhameau.png')"
-        >
-        </v-img>
-        <v-card-title color="primary">optiqueduhameau.com</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Site vitrine - Opticien</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/marialagoutte.png')"
-        >
-        </v-img>
-        <v-card-title color="primary">marialagoutte.com</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Site vitrine - Artiste</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/semaphore.jpeg')"
-        >
-        </v-img>
-        <v-card-title color="primary">semaphore.com</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Plateforme - Artistes</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-        </v-card-actions>
-      </v-card>
-
-      <v-card
-        class="ma-2"
-        width="450"
-        min-width="320"
-      >
-        <v-img
-          class="white--text align-end"
-          height="250px"
-          :src="require('@/assets/images/websites/lelaboratoiredespossibles.jpeg')"
-        >
-        </v-img>
-        <v-card-title color="primary">lelaboratoiredespossibles.com</v-card-title>
-
-        <v-card-text>
-          <div class="text--primary">Site vitrine - Developpeur</div>
-          <div class="text--grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-        </v-card-text>
-
-        <v-card-actions class="ml-2 mb-2">
-         <img :src="require('@/assets/images/tech/vue.png')" alt="vue.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/nuxt.png')" alt="nuxt.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/vuetify.png')" alt="vuetify" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/sass.png')" alt="sass.js" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/firebase.png')" alt="firebase" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/javascript.png')" alt="javascript" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/material.png')" alt="material design" height="30px" class="mr-2">
-          <img :src="require('@/assets/images/tech/pwa.svg')" alt="progressive web app" height="30px" class="mr-2">
-        </v-card-actions>
-      </v-card>
     </v-row>
   </v-container>
 </template>
 
 <script>
 export default {
-  
+  computed: {
+    proProjects() {
+      return this.$store.getters['projects/proProjects']
+    }
+  }
 }
 </script>
 
