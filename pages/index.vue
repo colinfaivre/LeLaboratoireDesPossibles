@@ -2,6 +2,7 @@
     <v-container
         fill-height
         fluid
+        class="gradient"
     >
         <v-row
             class="mt-6"

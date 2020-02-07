@@ -25,12 +25,19 @@
                 </div>
             </v-card-text>
             <v-card-actions class="ml-2 mb-2">
-                <img 
+                <a
+                    :href="techno.url"
+                    target="_blank"
                     v-for="techno in project.technos"
-                    :key="techno.index" :src="require('@/assets/images/tech/' + techno + '.png')"
-                    :alt="techno"
-                    height="30px"
-                    class="mr-2">
+                    :key="techno.index"
+                    class="mr-2"
+                >
+                    <img
+                        :src="require('@/assets/images/tech/' + techno.name + '.png')"
+                        :alt="techno.name"
+                        height="30px"
+                        >
+                </a>
             </v-card-actions>
         </v-card>
 

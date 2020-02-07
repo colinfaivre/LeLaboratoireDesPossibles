@@ -118,7 +118,7 @@
       <v-toolbar-title class="secondary--text pl-2">Le laboratoire des possibles</v-toolbar-title>
     </v-app-bar>
 
-    <v-content class="gradient">
+    <v-content class="default-background">
       <nuxt-child/>
     </v-content>
     
@@ -148,5 +148,8 @@ import Footer from '@/components/Footer'
 .gradient {
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(90, 90, 90, 0.2) 15%, rgba(255,255,255,1) 51%);
+}
+.default-background {
+  background: rgb(231, 231, 231);
 }
 </style>
