@@ -63,6 +63,17 @@
             </v-list-item-content>
           </v-list-item>
         </nuxt-link>
+
+        <nuxt-link to="/wot">
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon color="secondary">mdi-space-station</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Internet des objets</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </nuxt-link>
         
         <nuxt-link to="/tech">
           <v-list-item link>
@@ -144,10 +155,6 @@ import Footer from '@/components/Footer'
 <style lang="scss">
 .brand {
   font-family: 'Orbitron', sans-serif;
-}
-.gradient {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(90, 90, 90, 0.2) 15%, rgba(255,255,255,1) 51%);
 }
 .default-background {
   background: rgb(231, 231, 231);

@@ -64,4 +64,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.gradient {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(90, 90, 90, 0.2) 15%, rgba(255,255,255,1) 51%);
+}
 </style>
