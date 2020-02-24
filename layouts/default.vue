@@ -130,7 +130,7 @@
     </v-app-bar>
 
     <v-content class="default-background">
-      <nuxt-child/>
+      <nuxt-child @openMenu="drawer = true"/>
     </v-content>
     
     <Footer/>

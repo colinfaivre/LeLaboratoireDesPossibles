@@ -20,9 +20,9 @@
                     target="_blank" 
                     large
                     fab
-                    color="secondary"
+                    color="primary"
                 >
-                    <v-icon color="grey lighten-4">mdi-github-circle</v-icon>
+                    <v-icon color="secondary">mdi-github-circle</v-icon>
                 </v-btn>
                 <v-btn
                     v-if="project.webLink"
@@ -30,9 +30,9 @@
                     target="_blank" 
                     large
                     fab 
-                    color="secondary"
+                    color="primary"
                 >
-                    <v-icon color="grey lighten-4">mdi-arrow-right</v-icon>
+                    <v-icon color="secondary">mdi-arrow-right</v-icon>
                 </v-btn>
             </div>
             <v-card-title color="primary">
