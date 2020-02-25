@@ -13,6 +13,7 @@
       text
       icon 
       color="secondary"
+      aria-label="github"
     >
       <v-icon color="secondary">mdi-github-circle</v-icon>
     </v-btn>
@@ -24,6 +25,7 @@
       text
       icon
       color="secondary"
+      aria-label="email"
     >
       <v-icon color="secondary">mdi-email</v-icon>
     </v-btn>
@@ -35,6 +37,7 @@
       text
       icon
       color="secondary"
+      aria-label="linkedin"
     >
       <v-icon color="secondary">mdi-linkedin</v-icon>
     </v-btn>
@@ -46,6 +49,7 @@
       text
       icon
       color="secondary"
+      aria-label="malt.fr"
     >
       <img src="@/assets/images/malt-logo-secondary.svg" alt="Malt" height="25px" width="25px">
     </v-btn>

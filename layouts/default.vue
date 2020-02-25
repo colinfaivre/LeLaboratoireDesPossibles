@@ -2,6 +2,7 @@
   <v-app>
     <v-navigation-drawer
       v-model="drawer"
+      :class="drawer ? 'accessibility-visible' : 'accessibility-hidden'"
       color="primary"
       dark
       app
@@ -158,5 +159,14 @@ import Footer from '@/components/Footer'
 }
 .default-background {
   background: rgb(231, 231, 231);
+}
+
+// Accessibility classes to hide/show drawer
+// for it to be unfocusable when offscreen
+.accessibility-visible {
+  visibility: visible;
+}
+.accessibility-hidden {
+  visibility: hidden;
 }
 </style>
