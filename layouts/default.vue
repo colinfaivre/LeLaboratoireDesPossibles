@@ -1,134 +1,63 @@
 <template>
   <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <v-app-bar-nav-icon role="menu" color="secondary" @click.stop="drawer = !drawer" />
+    </v-app-bar>
+
     <v-navigation-drawer
       v-model="drawer"
       :class="drawer ? 'accessibility-visible' : 'accessibility-hidden'"
       color="primary"
       dark
       app
-      clipped
     >
-      <v-list dense>
+      <v-list>
 
-        <nuxt-link to="/pro">
-          <v-list-item link>
+        <nuxt-link
+          to="/"
+        >
+          <v-list-item two-line tabindex="-1" link class="pt-3 pb-3">
             <v-list-item-action>
-              <v-icon color="secondary">mdi-briefcase</v-icon>
+              <img
+                src="@/assets/images/labo-logo.svg"
+                alt=""
+                height="25px"
+                width="25px"
+              >
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Projets pros</v-list-item-title>
+              <p class="brand secondary--text ma-0">
+                Le laboratoire
+                <br>
+                des possibles
+              </p>
             </v-list-item-content>
           </v-list-item>
         </nuxt-link>
 
-        <nuxt-link to="/perso">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-palette</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Projets persos</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </nuxt-link>
+        <v-divider></v-divider>
 
-        <nuxt-link to="/games">
-          <v-list-item link>
+        <nuxt-link
+          v-for="menuItem in menuItems"
+          :key="menuItem.index"
+          :to="menuItem.link"
+        >
+          <v-list-item tabindex="-1" link>
             <v-list-item-action>
-              <v-icon color="secondary">mdi-space-invaders</v-icon>
+              <v-icon color="secondary">{{ menuItem.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Jeux</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </nuxt-link>
-
-        <nuxt-link to="/clones">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-microscope</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Clones</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </nuxt-link>
-
-        <nuxt-link to="/ar">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-cube-scan</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Réalité augmentée</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </nuxt-link>
-
-        <nuxt-link to="/wot">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-space-station</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Internet des objets</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </nuxt-link>
-        
-        <nuxt-link to="/tech">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-chip</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Technologies utilisées</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </nuxt-link>
-
-        <nuxt-link to="/certif">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-school</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Formation</v-list-item-title>
-            </v-list-item-content>
-        </v-list-item>
-        </nuxt-link>
-
-        <nuxt-link to="/legal">
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon color="secondary">mdi-bank</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Mentions Légales</v-list-item-title>
+              <v-list-item-title>{{ menuItem.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </nuxt-link>
 
       </v-list>
     </v-navigation-drawer>
-
-    <v-app-bar
-      app
-      color="primary"
-      clipped-left
-      dark
-    >
-      <v-app-bar-nav-icon color="secondary" @click.stop="drawer = !drawer" />
-      <nuxt-link to="/" class="mx-2 d-flex justify-center">
-        <img
-          src="@/assets/images/labo-logo.svg"
-          alt="Le laboratoire des possibles"
-          height="35px"
-          width="35px"
-        >
-      </nuxt-link>
-      <v-toolbar-title class="secondary--text pl-2">Le laboratoire des possibles</v-toolbar-title>
-    </v-app-bar>
 
     <v-content class="default-background">
       <nuxt-child @openMenu="drawer = true"/>
@@ -149,6 +78,53 @@ import Footer from '@/components/Footer'
     },
     data: () => ({
       drawer: false,
+      menuItems: [
+        {
+          link: "/pro",
+          icon: "mdi-briefcase",
+          title: "Projets professionels",
+        },
+        {
+          link: "/perso",
+          icon: "mdi-palette",
+          title: "Projets personnels",
+        },
+        {
+          link: "/games",
+          icon: "mdi-space-invaders",
+          title: "Jeux",
+        },
+        {
+          link: "/clones",
+          icon: "mdi-microscope",
+          title: "Clones",
+        },
+        {
+          link: "/ar",
+          icon: "mdi-cube-scan",
+          title: "Réalité augmentée",
+        },
+        {
+          link: "/wot",
+          icon: "mdi-space-station",
+          title: "Internet des objets",
+        },
+        {
+          link: "/tech",
+          icon: "mdi-chip",
+          title: "Technologies utilisées",
+        },
+        {
+          link: "/certif",
+          icon: "mdi-school",
+          title: "Formation",
+        },
+        {
+          link: "/legal",
+          icon: "mdi-bank",
+          title: "Mentions légales",
+        },
+      ]
     }),
   }
 </script>
@@ -168,5 +144,28 @@ import Footer from '@/components/Footer'
 }
 .accessibility-hidden {
   visibility: hidden;
+}
+
+// Test opacity page transition
+.page-enter-active,
+.page-leave-active {
+opacity: 0;
+transition: opacity 0.2s ease;
+}
+/* entering start */
+.page-enter {
+opacity: 0;
+}
+/* entering end */
+.page-enter-to {
+opacity: 1;
+}
+/* leaving start */
+.page-leave {
+opacity: 1;
+}
+/* leaving end */
+.page-leave-to {
+opacity: 0;
 }
 </style>

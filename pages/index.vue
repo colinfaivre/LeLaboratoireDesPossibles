@@ -7,7 +7,7 @@
                 class="d-flex flex-column align-center justify-center top-screen"
             >
                 <img src="@/assets/images/labo-logo.svg" alt="Le laboratoire des possibles">
-                <h1 tabindex="0" class="brand secondary--text">
+                <h1 class="brand secondary--text">
                     Le laboratoire
                     <br/>
                     des possibles
@@ -15,7 +15,7 @@
                 <div class="d-flex align-center">
                     <img src="@/assets/images/vue-logo.svg" alt="Vue.js" class="mr-3">
 
-                    <p tabindex="0" class="text-left grey--text body-1 mt-4">
+                    <p class="text-left grey--text body-1 mt-4">
                         Votre application web
                         <br>
                         développée en Vue.js
@@ -30,7 +30,7 @@
                 >
                     <img
                     src="@/assets/images/malt-logo-primary.svg"
-                    alt="Malt"
+                    alt=""
                     height="30px"
                     width="30px"
                     class="pr-2"
@@ -82,7 +82,6 @@
 
 <script>
 export default {
-  
 }
 </script>
 
