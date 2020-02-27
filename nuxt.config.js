@@ -6,7 +6,6 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
     title: 'Le laboratoire des possibles',
     meta: [
       { charset: 'utf-8' },
@@ -21,7 +20,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#CDB985' },
   /*
   ** Global CSS
   */
@@ -48,6 +47,24 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
   ],
+  pwa: {
+    manifest: {
+      "short_name": "Labo",
+      "name": "Le laboratoire des possibles",
+      "lang": "fr",
+      "background_color": "#1E1E1E",
+      "display": "standalone",
+      "theme_color": "#1E1E1E"
+    },
+  },
+  workbox: {
+    offlineStrategy: 'CacheFirst',
+    offlineAssets: ['/', '/ar/index.html', '/clones/index.html', '/games/index.html', '/perso/index.html', '/legal/index.html', '/pro/index.html', '/tech/index.html', '/wot/index.html'],
+    offlinePage: '/404.html',
+  },
+  generate: {
+    fallback: true,
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
