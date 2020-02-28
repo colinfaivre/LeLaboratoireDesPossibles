@@ -4,7 +4,7 @@
       app
       color="primary"
       dark
-      class="pl-1"
+      class="px-1"
     >
       <!-- Close button -->
       <button
@@ -24,13 +24,22 @@
         v-if="!drawer"
       />
 
-      <v-spacer></v-spacer>
+      <v-spacer/>
 
       <!-- Page name -->
-      <div class="secondary--text">{{ routeName }}</div>
+      <div class="secondary--text route-name">
+        <span class="hidden-sm-and-down">
+          <nuxt-link to="/" class="secondary--text">
+            Laboratoire
+          </nuxt-link>
+          <span> / </span>
+        </span>
+        {{ routeName }}
+      </div>
 
-      <v-spacer></v-spacer>
+      <v-spacer/>
 
+      <!-- Malt button -->
       <v-btn
         href="https://www.malt.fr/profile/colinfaivre"
         target="_blank"
@@ -39,7 +48,7 @@
         color="secondary"
         aria-label="malt.fr"
       >
-        <img src="@/assets/images/malt-logo-secondary.svg" alt="Malt" height="25px" width="25px">
+        <img src="@/assets/images/malt-logo-secondary.svg" alt="Malt" height="28px" width="28px">
       </v-btn>
       
     </v-app-bar>
@@ -77,7 +86,7 @@
           </v-list-item>
         </nuxt-link>
 
-        <v-divider></v-divider>
+        <v-divider/>
 
         <nuxt-link
           v-for="route in routes"
@@ -101,15 +110,15 @@
       <nuxt-child @openMenu="drawer = true"/>
     </v-content>
     
-    <Footer/>
+    <TheFooter/>
   </v-app>
 </template>
 
 <script>
-import Footer from '@/components/Footer'
+import TheFooter from '@/components/TheFooter'
   export default {
     components: {
-      Footer,
+      TheFooter,
     },
     props: {
       source: String,
@@ -192,6 +201,12 @@ body {
 }
 .close-button {
   width: 35px;
+}
+.route-name {
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
 }
 
 // Accessibility classes to hide/show drawer
