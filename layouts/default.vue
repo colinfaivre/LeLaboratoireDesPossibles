@@ -4,8 +4,13 @@
       app
       color="primary"
       dark
+      class="pl-1"
     >
-      <v-app-bar-nav-icon role="menu" color="secondary" @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon
+        role="menu"
+        color="secondary"
+        @click.stop="drawer = !drawer"
+      />
     </v-app-bar>
 
     <v-navigation-drawer
@@ -15,22 +20,22 @@
       dark
       app
     >
-      <v-list>
+      <v-list class="pt-0">
 
         <nuxt-link
           to="/"
         >
-          <v-list-item two-line tabindex="-1" link class="pt-3 pb-3">
-            <v-list-item-action>
+          <v-list-item two-line tabindex="-1" link class="pt-5 pb-5">
+            <v-list-item-action class="mr-2">
               <img
                 src="@/assets/images/labo-logo.svg"
                 alt=""
-                height="25px"
-                width="25px"
+                height="50px"
+                width="50px"
               >
             </v-list-item-action>
             <v-list-item-content>
-              <p class="brand secondary--text ma-0">
+              <p class="brand-font secondary--text ma-0 drawer-title">
                 Le laboratoire
                 <br>
                 des possibles
@@ -130,8 +135,14 @@ import Footer from '@/components/Footer'
 </script>
 
 <style lang="scss">
-.brand {
+body {
+  background-color: #1E1E1E;
+}
+.brand-font {
   font-family: 'Orbitron', sans-serif;
+}
+.drawer-title {
+  font-size: 18px;
 }
 .default-background {
   background: rgb(231, 231, 231);

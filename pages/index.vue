@@ -7,7 +7,7 @@
                 class="d-flex flex-column align-center justify-center top-screen"
             >
                 <img src="@/assets/images/labo-logo.svg" alt="Le laboratoire des possibles">
-                <h1 class="brand secondary--text">
+                <h1 class="brand-font z-up secondary--text">
                     Le laboratoire
                     <br/>
                     des possibles
@@ -97,7 +97,7 @@ export default {
 .btn {
     z-index: 2;
 }
-.brand {
+.z-up {
     z-index: 2;
 }
 .bottom-screen {
