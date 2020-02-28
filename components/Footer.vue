@@ -42,17 +42,5 @@
       <v-icon color="secondary">mdi-linkedin</v-icon>
     </v-btn>
 
-    <v-btn
-      href="https://www.malt.fr/profile/colinfaivre"
-      target="_blank"
-      class="mx-1"
-      text
-      icon
-      color="secondary"
-      aria-label="malt.fr"
-    >
-      <img src="@/assets/images/malt-logo-secondary.svg" alt="Malt" height="25px" width="25px">
-    </v-btn>
-    
   </v-footer>
 </template>

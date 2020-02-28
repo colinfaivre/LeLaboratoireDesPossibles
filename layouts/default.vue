@@ -6,21 +6,54 @@
       dark
       class="pl-1"
     >
+      <!-- Close button -->
+      <button
+        role="close menu"
+        v-if="drawer"
+        @click.stop="drawer = !drawer"
+        class="close-button"
+      >
+        <v-icon color="secondary">mdi-window-close</v-icon>
+      </button>
+
+      <!-- Menu button -->
       <v-app-bar-nav-icon
         role="menu"
         color="secondary"
         @click.stop="drawer = !drawer"
+        v-if="!drawer"
       />
+
+      <v-spacer></v-spacer>
+
+      <!-- Page name -->
+      <div class="secondary--text">{{ routeName }}</div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="https://www.malt.fr/profile/colinfaivre"
+        target="_blank"
+        text
+        icon
+        color="secondary"
+        aria-label="malt.fr"
+      >
+        <img src="@/assets/images/malt-logo-secondary.svg" alt="Malt" height="25px" width="25px">
+      </v-btn>
+      
     </v-app-bar>
 
     <v-navigation-drawer
       v-model="drawer"
-      :class="drawer ? 'accessibility-visible' : 'accessibility-hidden'"
       color="primary"
       dark
       app
     >
-      <v-list class="pt-0">
+      <v-list
+        class="pt-0"
+        :class="drawer ? 'accessibility-visible' : 'accessibility-hidden'"
+      >
 
         <nuxt-link
           to="/"
@@ -47,16 +80,16 @@
         <v-divider></v-divider>
 
         <nuxt-link
-          v-for="menuItem in menuItems"
-          :key="menuItem.index"
-          :to="menuItem.link"
+          v-for="route in routes"
+          :key="route.index"
+          :to="route.link"
         >
           <v-list-item tabindex="-1" link>
             <v-list-item-action>
-              <v-icon color="secondary">{{ menuItem.icon }}</v-icon>
+              <v-icon color="secondary">{{ route.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>{{ menuItem.title }}</v-list-item-title>
+              <v-list-item-title>{{ route.name }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </nuxt-link>
@@ -83,54 +116,64 @@ import Footer from '@/components/Footer'
     },
     data: () => ({
       drawer: false,
-      menuItems: [
+      routes: [
         {
           link: "/pro",
           icon: "mdi-briefcase",
-          title: "Projets professionels",
+          name: "Projets professionels",
         },
         {
           link: "/perso",
           icon: "mdi-palette",
-          title: "Projets personnels",
+          name: "Projets personnels",
         },
         {
           link: "/games",
           icon: "mdi-space-invaders",
-          title: "Jeux",
+          name: "Jeux",
         },
         {
           link: "/clones",
           icon: "mdi-microscope",
-          title: "Clones",
+          name: "Clones",
         },
         {
           link: "/ar",
           icon: "mdi-cube-scan",
-          title: "Réalité augmentée",
+          name: "Réalité augmentée",
         },
         {
           link: "/wot",
           icon: "mdi-space-station",
-          title: "Internet des objets",
+          name: "Internet des objets",
         },
         {
           link: "/tech",
           icon: "mdi-chip",
-          title: "Technologies utilisées",
+          name: "Technologies utilisées",
         },
         {
           link: "/certif",
           icon: "mdi-school",
-          title: "Formation",
+          name: "Formation",
         },
         {
           link: "/legal",
           icon: "mdi-bank",
-          title: "Mentions légales",
+          name: "Mentions légales",
         },
       ]
     }),
+    computed: {
+      routeName() {
+        const currentRoute = this.routes.filter(route => route.link === this.$route.path)
+        if (currentRoute[0]) {
+          return currentRoute[0].name
+        } else {
+          return 'Accueil'
+        }
+      }
+    }
   }
 </script>
 
@@ -146,6 +189,9 @@ body {
 }
 .default-background {
   background: rgb(231, 231, 231);
+}
+.close-button {
+  width: 35px;
 }
 
 // Accessibility classes to hide/show drawer

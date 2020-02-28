@@ -58,7 +58,6 @@ export default {
     },
   },
   workbox: {
-    offlineStrategy: 'CacheFirst',
     offlineAssets: ['/', '/ar/index.html', '/clones/index.html', '/games/index.html', '/perso/index.html', '/legal/index.html', '/pro/index.html', '/tech/index.html', '/wot/index.html'],
     offlinePage: '/404.html',
   },
