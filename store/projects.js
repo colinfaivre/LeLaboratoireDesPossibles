@@ -1,79 +1,47 @@
 import {db} from '@/store/db'
 
 export const state = () => ({
-    technos: {
-        vue: {
-            name: "vue",
-            url: "https://vuejs.org/",
-            description: "",
-        },
-        nuxt: {
-            name: "nuxt",
-            url: "https://fr.nuxtjs.org/",
-            description: "",
-        },
-        sass: {
-            name: "sass",
-            url: "https://sass-lang.com/",
-            description: "",
-        },
-        firebase: {
-            name: "firebase",
-            url: "https://firebase.google.com/",
-            description: "",
-        },
-        javascript: {
-            name: "javascript",
-            url: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
-            description: "",
-        },
-        material: {
-            name: "material",
-            url: "https://material.io/design/",
-            description: "",
-        },
-        pwa: {
-            name: "pwa",
-            url: "https://developers.google.com/web/progressive-web-apps",
-            description: "",
-        },
-        vuetify: {
-            name: "vuetify",
-            url: "https://vuetifyjs.com/en/",
-            description: "",
-        },
-        typescript: {
-            name: "typescript",
-            url: "https://www.typescriptlang.org/",
-            description: "",
-        },
-        buefy: {
-            name: "buefy",
-            url: "https://buefy.org/documentation/dropdown/",
-            description: "",
-        },
-    },    
-
-    projects: db.projects
+    technos: db.technos,
+    projects: db.projects,
+    categories: db.categories,
 })
 
 export const getters = {
     proProjects: state => {
-        return state.projects.filter(project => project.category === "pro")
+        return {
+            list: state.projects.filter(project => project.category === "pro"),
+            data: state.categories.filter(category => category.id === "pro")[0]
+        }
     },
     persoProjects: state => {
-        return state.projects.filter(project => project.category === "perso")
+        return {
+            list: state.projects.filter(project => project.category === "perso"),
+            data: state.categories.filter(category => category.id === "perso")[0]
+        }
     },
     gameProjects: state => {
-        return state.projects.filter(project => project.category === "game")
+        return {
+            list: state.projects.filter(project => project.category === "game"),
+            data: state.categories.filter(category => category.id === "game")[0]
+        }
     },
     cloneProjects: state => {
-        return state.projects.filter(project => project.category === "clone")
+        return {
+            list: state.projects.filter(project => project.category === "clone"),
+            data: state.categories.filter(category => category.id === "clone")[0]
+        }
     },
     arProjects: state => {
-        return state.projects.filter(project => project.category === "ar")
+        return {
+            list: state.projects.filter(project => project.category === "ar"),
+            data: state.categories.filter(category => category.id === "ar")[0]
+        }
     },
     wotProjects: state => {
-        return state.projects.filter(project => project.category === "wot")
+        return {
+            list: state.projects.filter(project => project.category === "wot"),
+            data: state.categories.filter(category => category.id === "wot")[0]
+        }
     },
+
 }

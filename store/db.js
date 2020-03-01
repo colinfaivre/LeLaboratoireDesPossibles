@@ -39,6 +39,112 @@ const buefy = {
     url: "https://buefy.org/documentation/dropdown/",
 }
 
+const technos = {
+    vue: {
+        name: "vue",
+        url: "https://vuejs.org/",
+        description: "",
+    },
+    nuxt: {
+        name: "nuxt",
+        url: "https://fr.nuxtjs.org/",
+        description: "",
+    },
+    sass: {
+        name: "sass",
+        url: "https://sass-lang.com/",
+        description: "",
+    },
+    firebase: {
+        name: "firebase",
+        url: "https://firebase.google.com/",
+        description: "",
+    },
+    javascript: {
+        name: "javascript",
+        url: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
+        description: "",
+    },
+    material: {
+        name: "material",
+        url: "https://material.io/design/",
+        description: "",
+    },
+    pwa: {
+        name: "pwa",
+        url: "https://developers.google.com/web/progressive-web-apps",
+        description: "",
+    },
+    vuetify: {
+        name: "vuetify",
+        url: "https://vuetifyjs.com/en/",
+        description: "",
+    },
+    typescript: {
+        name: "typescript",
+        url: "https://www.typescriptlang.org/",
+        description: "",
+    },
+    buefy: {
+        name: "buefy",
+        url: "https://buefy.org/documentation/dropdown/",
+        description: "",
+    },
+}
+
+const categories = [
+    {
+        id: "pro",
+        name: "Projets professionnels",
+        description: `
+            Le laboratoire des possible c'est avant tout une entreprise
+            qui se consacre au développement Front-end. Le framework Vue.js est
+            utilisé pour créer des applications web. Back-offices, dates, projets (longueurs), nombre de clients...
+        `
+    },
+    {
+        id: "perso",
+        name: "Projets personnels",
+        description: `
+            Avant que l'entreprise ne voie le jour, de nombreux sites internets
+            à l'usage de leur développeur ont servis un but artistique pour coller aux plaisirs du moment.        
+        `
+    },
+    {
+        id: "game",
+        name: "Jeux",
+        description: `
+            Le laboratoire des possibles, c'est aussi retrouver le plaisir simple de recréer les jeux d'arcade de notre enfance.
+            Pour challenger ses connaissanes en JS et repousser les limites de l'utilisation classique du HTML et du CSS.
+        `
+    },
+    {
+        id: "clone",
+        name: "Clones",
+        description: `
+            Que serait un laboratoire sans ses expériences dangereuses et controversées ?
+            Cette pièce du laboratoire se consacre entièrement à la reproduction plus ou moins fidèle d'applications bien connues.
+            Reproductions et clones ont, la première place. Peureux, s'abstenir.
+        `
+    },
+    {
+        id: "ar",
+        name: "Réalité augmentée",
+        description: `
+            Expérimenter, tester, essayer, reproduire, recommencer. Quand la technologie s'invite au
+            frontières du réel :)
+        `
+    },
+    {
+        id: "wot",
+        name: "Objects connectés",
+        description: `
+            Expérimenter, tester, essayer, reproduire, recommencer. Quand la technologie s'invite au
+            frontières du réel :)
+        `
+    },
+]
+
 const projects = [
     // Projets pros
     {
@@ -141,17 +247,6 @@ const projects = [
         webLink: null,
     },
     {
-        screenshot: "semaphore.jpeg",
-        title: "Semaphore",
-        subtitle: "Plateforme - Artistes",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [javascript, vue],
-        category: "pro",
-        year: 2019,
-        githubLink: null,
-        webLink: null,
-    },
-    {
         screenshot: "lelaboratoiredespossibles.jpeg",
         title: "Le laboratoire des possibles",
         subtitle: "Site vitrine - Developpeur",
@@ -164,17 +259,6 @@ const projects = [
     },
 
     // Projets persos
-    {
-        screenshot: "mojomatik.jpeg",
-        title: "Mojomatik",
-        subtitle: "Application pour booster son mojo",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [vue, pwa],
-        category: "perso",
-        year: 2019,
-        githubLink: null,
-        webLink: null,
-    },
     {
         screenshot: "colinfaivre.jpeg",
         title: "colinfaivre.com",
@@ -198,9 +282,20 @@ const projects = [
         webLink: "https://sourirepanique.com",
     },
     {
-        screenshot: "adlib.jpg",
-        title: "adlib.com",
-        subtitle: "Site vitrine - Groupe",
+        screenshot: "semaphore.jpeg",
+        title: "Semaphore",
+        subtitle: "Plateforme - Artistes",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        technos: [javascript, vue],
+        category: "perso",
+        year: 2019,
+        githubLink: null,
+        webLink: null,
+    },
+    {
+        screenshot: "mojomatik.jpeg",
+        title: "Mojomatik",
+        subtitle: "Application pour booster son mojo",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [vue, pwa],
         category: "perso",
@@ -329,5 +424,7 @@ const projects = [
 ]
 
 export const db = {
-    projects
+    projects,
+    categories,
+    technos
 }

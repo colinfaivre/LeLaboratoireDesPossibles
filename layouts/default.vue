@@ -209,6 +209,20 @@ a {
   text-decoration: none;
 }
 
+
+// Page design
+.page {
+  padding: 20px;
+  padding-top: 30px;
+  max-width: 960px;
+  margin: auto;
+  color: #1E1E1E;
+}
+.page-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 // Accessibility classes to hide/show drawer
 // for it to be unfocusable when offscreen
 .accessibility-visible {
