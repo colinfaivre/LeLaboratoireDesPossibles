@@ -1,4 +1,4 @@
-<template>
+<template functionnal>
     <v-row justify="center">
 
         <v-card

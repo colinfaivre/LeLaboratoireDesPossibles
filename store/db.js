@@ -332,17 +332,6 @@ const projects = [
         githubLink: null,
         webLink: null,
     },
-    {
-        screenshot: "mojomatik.jpeg",
-        title: "Mojomatik",
-        subtitle: "Application pour booster son mojo",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [vue, pwa],
-        category: "perso",
-        year: 2019,
-        githubLink: null,
-        webLink: null,
-    },
 
     // Games
     {
