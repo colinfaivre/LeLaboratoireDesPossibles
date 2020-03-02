@@ -1,8 +1,10 @@
-<template>
+<template functionnal>
     <div class="page">
-        <h2 class="page-title">{{ pageData.name }}</h2>
+        <h2 class="page-title">
+            {{ pageData.name }}
+        </h2>
         <p class="page-description">
-        {{ pageData.description }}
+            {{ pageData.description }}
         </p>
     </div>
 </template>
@@ -20,5 +22,12 @@
     width: 60%;
     text-align: center;
     margin: auto;
+    margin-bottom: 20px;
+}
+@media (max-width: 1000px)
+{
+    .page-description {
+        width: 100%;
+    }
 }
 </style>

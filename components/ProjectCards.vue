@@ -35,31 +35,62 @@
                     <v-icon color="secondary">mdi-arrow-right</v-icon>
                 </v-btn>
             </div>
-            <v-card-title color="primary">
+
+            <v-card-title
+                v-if="!project.customer"
+                color="primary"
+                class="mb-6"
+            >
                 {{ project.title }}
             </v-card-title>
+
+            <div
+                v-if="project.customer" 
+                class="mx-4 mt-4 customer"
+            >
+                <div class="d-flex">
+                    <a :href="project.customer.link" target="_blank">
+                        <img
+                            :src="require('@/assets/images/customers/' + project.customer.logo)"
+                            :alt="project.customer.name"
+                            height="50px"
+                        >
+                    </a>
+                    <div class="customer-description ml-2">
+                        <strong>{{ project.customer.type }}</strong>
+                        <span class="grey--text">{{ project.customer.location }}</span>
+                        <br/> 
+                        Mission de 
+                        {{ project.customer.duration }} mois
+                    </div>
+                </div>
+            </div>
             <v-card-text>
                 <div class="text--primary">
                     {{ project.subtitle }}
                 </div>
-                <div class="text--grey">
+                <div class="project-text text--grey">
                     {{ project.text }}
                 </div>
             </v-card-text>
-            <v-card-actions class="ml-2 mb-2">
-                <a
-                    v-for="techno in project.technos"
-                    :href="techno.url"
-                    :key="techno.index"
-                    target="_blank"
-                    class="mr-2"
-                >
-                    <img
-                        :src="require('@/assets/images/tech/' + techno.name + '.png')"
-                        :alt="techno.name"
-                        height="30px"
+
+            <v-card-actions class="ml-2 mr-2 d-flex justify-space-between">
+                <div>
+                    <a
+                        v-for="techno in project.technos"
+                        :href="techno.url"
+                        :key="techno.index"
+                        target="_blank"
+                        class="mr-2"
                     >
-                </a>
+                        <img
+                            :src="require('@/assets/images/tech/' + techno.name + '.png')"
+                            :alt="techno.name"
+                            height="30px"
+                        >
+                    </a>
+                </div>
+                <div class="date">{{ project.year }}</div>
             </v-card-actions>
         </v-card>
 
@@ -84,5 +115,12 @@
     z-index: 2;
     right: 15px;
     margin-top: -30px;
+}
+.project-text {
+    height: 100px;
+}
+.date {
+    color: #9e9e9e;
+    font-size: 15px;
 }
 </style>

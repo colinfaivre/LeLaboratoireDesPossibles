@@ -148,26 +148,23 @@ const categories = [
 const projects = [
     // Projets pros
     {
-        screenshot: "psycho.png",
-        title: "jeanyvesgauthier.com",
-        subtitle: "Site vitrine - Psychanalyste",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [vue, nuxt, sass, firebase, javascript, material, pwa],
-        category: "pro",
-        year: 2019,
-        githubLink: null,
-        webLink: null,
-        },
-    {
         screenshot: "sapiendo.png",
         title: "Sapiendo",
         subtitle: "Back Office - Site conseil retraite",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Lo, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [vue, vuetify, sass, material],
         category: "pro",
         year: 2019,
         githubLink: null,
         webLink: null,
+        customer: {
+            name: "WebId",
+            type: "Agence web",
+            location: "Lyon",
+            duration: 3,
+            logo: "webId.png",
+            link: "https://www.web-id.fr/"
+        }
     },
     {
         screenshot: "novaccess.png",
@@ -179,6 +176,14 @@ const projects = [
         year: 2019,
         githubLink: null,
         webLink: null,
+        customer: {
+            name: "MyJungly",
+            type: "Agence web",
+            location: "Paris",
+            duration: 3,
+            logo: "myJungly.png",
+            link: "https://www.myjungly.com"
+        }
     },
     {
         screenshot: "barnaby.jpg",
@@ -190,6 +195,14 @@ const projects = [
         year: 2019,
         githubLink: null,
         webLink: null,
+        customer: {
+            name: "Barnaby",
+            type: "Startup",
+            location: "Bruxelles",
+            duration: 1,
+            logo: "barnaby.png",
+            link: "https://barnaby.club/"
+        }
     },
     {
         screenshot: "glifter.png",
@@ -201,6 +214,14 @@ const projects = [
         year: 2019,
         githubLink: null,
         webLink: null,
+        customer: {
+            name: "MyJungly",
+            type: "Agence web",
+            location: "Paris",
+            duration: 3,
+            logo: "myJungly.png",
+            link: "https://www.myjungly.com"
+        }
     },
     {
         screenshot: "axiom.png",
@@ -208,6 +229,25 @@ const projects = [
         subtitle: "Back Office - Outil communication",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [javascript, vue, sass],
+        category: "pro",
+        year: 2019,
+        githubLink: null,
+        webLink: null,
+        customer: {
+            name: "Antiopea",
+            type: "Startup",
+            location: "Paris",
+            duration: 3,
+            logo: "antiopea.png",
+            link: "https://antiopea.com/"
+        }
+    },
+    {
+        screenshot: "psycho.png",
+        title: "jeanyvesgauthier.com",
+        subtitle: "Site vitrine - Psychanalyste",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        technos: [vue, nuxt, sass, firebase, javascript, material, pwa],
         category: "pro",
         year: 2019,
         githubLink: null,
@@ -246,19 +286,19 @@ const projects = [
         githubLink: null,
         webLink: null,
     },
+    
+    // Projets persos
     {
         screenshot: "lelaboratoiredespossibles.jpeg",
         title: "Le laboratoire des possibles",
         subtitle: "Site vitrine - Developpeur",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [vue, nuxt, vuetify, sass, firebase, javascript, material, pwa],
-        category: "pro",
+        category: "perso",
         year: 2019,
         githubLink: null,
         webLink: null,
     },
-
-    // Projets persos
     {
         screenshot: "colinfaivre.jpeg",
         title: "colinfaivre.com",
@@ -320,6 +360,17 @@ const projects = [
         screenshot: "tetris.png",
         title: "Vue.js Tetris",
         subtitle: "Teris game",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        technos: [vue, javascript, material, pwa],
+        category: "game",
+        year: 2019,
+        githubLink: "https://github.com/colinfaivre/vue-tetris",
+        webLink: null,
+    },
+    {
+        screenshot: "breakout.png",
+        title: "Breakout",
+        subtitle: "Jeu de casse-brique",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [vue, javascript, material, pwa],
         category: "game",
