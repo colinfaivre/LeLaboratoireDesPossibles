@@ -1,6 +1,8 @@
-# labo
+# Le laboratoire des possibles
 
-> My top-notch Nuxt.js project
+> A progressive web app to show the projects I'm working on
+<https://lelaboratoiredespossibles.com>
+![homepage](https://github.com/colinfaivre/LeLaboratoireDesPossibles/static/og-image.png "Logo Title Text 1")
 
 ## Build Setup
 
@@ -19,4 +21,4 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+This app is build with Nuxt, check out [Nuxt.js docs](https://nuxtjs.org).
