@@ -151,11 +151,11 @@ import TheFooter from '@/components/TheFooter'
           icon: "mdi-cube-scan",
           name: "Réalité augmentée",
         },
-        {
-          link: "/wot",
-          icon: "mdi-space-station",
-          name: "Internet des objets",
-        },
+        // {
+        //   link: "/wot",
+        //   icon: "mdi-space-station",
+        //   name: "Internet des objets",
+        // },
         {
           link: "/tech",
           icon: "mdi-chip",

@@ -1,8 +1,9 @@
 # Le laboratoire des possibles
 
 > A progressive web app to show the projects I'm working on
+
 <https://lelaboratoiredespossibles.com>
-![homepage](https://github.com/colinfaivre/LeLaboratoireDesPossibles/static/og-image.png "Logo Title Text 1")
+
 
 ## Build Setup
 

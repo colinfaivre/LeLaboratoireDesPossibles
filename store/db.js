@@ -96,62 +96,73 @@ const categories = [
     {
         id: "pro",
         name: "Projets professionnels",
-        description: `
-            Le laboratoire des possible c'est avant tout une entreprise
-            qui se consacre au développement Front-end. Le framework Vue.js est
-            utilisé pour créer des applications web. Back-offices, dates, projets (longueurs), nombre de clients...
-        `
+        // description: `
+        //     Le laboratoire des possible c'est avant tout une entreprise
+        //     qui se consacre au développement Front-end. Le framework Vue.js est
+        //     utilisé pour créer des applications web. Back-offices, dates, projets (longueurs), nombre de clients...
+        // `
     },
     {
         id: "perso",
         name: "Projets personnels",
-        description: `
-            Avant que l'entreprise ne voie le jour, de nombreux sites internets
-            à l'usage de leur développeur ont servis un but artistique pour coller aux plaisirs du moment.        
-        `
+        // description: `
+        //     Avant que l'entreprise ne voie le jour, de nombreux sites internets
+        //     à l'usage de leur développeur ont servis un but artistique pour coller aux plaisirs du moment.        
+        // `
     },
     {
         id: "game",
         name: "Jeux",
-        description: `
-            Le laboratoire des possibles, c'est aussi retrouver le plaisir simple de recréer les jeux d'arcade de notre enfance.
-            Pour challenger ses connaissanes en JS et repousser les limites de l'utilisation classique du HTML et du CSS.
-        `
+        // description: `
+        //     Le laboratoire des possibles, c'est aussi retrouver le plaisir simple de recréer les jeux d'arcade de notre enfance.
+        //     Pour challenger ses connaissanes en JS et repousser les limites de l'utilisation classique du HTML et du CSS.
+        // `
     },
     {
         id: "clone",
         name: "Clones",
-        description: `
-            Que serait un laboratoire sans ses expériences dangereuses et controversées ?
-            Cette pièce du laboratoire se consacre entièrement à la reproduction plus ou moins fidèle d'applications bien connues.
-            Reproductions et clones ont, la première place. Peureux, s'abstenir.
-        `
+        // description: `
+        //     Que serait un laboratoire sans ses expériences dangereuses et controversées ?
+        //     Cette pièce du laboratoire se consacre entièrement à la reproduction plus ou moins fidèle d'applications bien connues.
+        //     Reproductions et clones ont, la première place. Peureux, s'abstenir.
+        // `
     },
     {
         id: "ar",
         name: "Réalité augmentée",
-        description: `
-            Expérimenter, tester, essayer, reproduire, recommencer. Quand la technologie s'invite au
-            frontières du réel :)
-        `
+        // description: `
+        //     Expérimenter, tester, essayer, reproduire, recommencer. Quand la technologie s'invite au
+        //     frontières du réel :)
+        // `
     },
     {
         id: "wot",
         name: "Objects connectés",
-        description: `
-            Expérimenter, tester, essayer, reproduire, recommencer. Quand la technologie s'invite au
-            frontières du réel :)
-        `
+        // description: `
+        //     Expérimenter, tester, essayer, reproduire, recommencer. Quand la technologie s'invite au
+        //     frontières du réel :)
+        // `
     },
 ]
 
 const projects = [
     // Projets pros
     {
+        screenshot: "psycho.png",
+        title: "jeanyvesgauthier.com",
+        subtitle: "Site vitrine - Psychanalyste",
+        text: "Développement d'une progressive web app pour le site vitrine d'un psychanalyste. L'app propose à l'utilisateur de l'installer sur l'écran d'accueil de son smartphone et elle est ensuite utilisable sans réseau.",
+        technos: [vue, nuxt, sass, firebase, javascript, material, pwa],
+        category: "pro",
+        year: 2020,
+        githubLink: null,
+        webLink: null,
+    },
+    {
         screenshot: "sapiendo.png",
         title: "Sapiendo",
         subtitle: "Back Office - Site conseil retraite",
-        text: "Lo, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Participation au développement du front de l'espace admin  de https://www.sapiendo-retraite.fr Un site spécialisé dans le calcul de retraite réalisé sous Laravel. Intégration du front du site client.",
         technos: [vue, vuetify, sass, material],
         category: "pro",
         year: 2019,
@@ -161,35 +172,16 @@ const projects = [
             name: "WebId",
             type: "Agence web",
             location: "Lyon",
-            duration: 3,
+            duration: 4,
             logo: "webId.png",
             link: "https://www.web-id.fr/"
-        }
-    },
-    {
-        screenshot: "novaccess.png",
-        title: "Novaccess",
-        subtitle: "Back Office - Application ouvre portails",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [vue, typescript, buefy, sass],
-        category: "pro",
-        year: 2019,
-        githubLink: null,
-        webLink: null,
-        customer: {
-            name: "MyJungly",
-            type: "Agence web",
-            location: "Paris",
-            duration: 3,
-            logo: "myJungly.png",
-            link: "https://www.myjungly.com"
         }
     },
     {
         screenshot: "barnaby.jpg",
         title: "Barnaby",
         subtitle: "Application web - Commande de boissons",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Ajout d'une fonctionnalité sur https://Barnaby.club pour permettre à l'utilisateur de commander ses boissons dans un bar à partir de l'application web développée (QR code de sa table).",
         technos: [javascript, vue, nuxt, sass],
         category: "pro",
         year: 2019,
@@ -205,10 +197,29 @@ const projects = [
         }
     },
     {
+        screenshot: "novaccess.png",
+        title: "Novaccess",
+        subtitle: "Back Office - Application ouvre portails",
+        text: "Développement du backoffice d'une application permettant d'ouvrir des portes de parkings privés. Gestion des utilisateurs, de leurs droits et abonnements",
+        technos: [vue, typescript, buefy, sass],
+        category: "pro",
+        year: 2019,
+        githubLink: null,
+        webLink: null,
+        customer: {
+            name: "MyJungly",
+            type: "Agence web",
+            location: "Paris",
+            duration: 4,
+            logo: "myJungly.png",
+            link: "https://www.myjungly.com"
+        }
+    },
+    {
         screenshot: "glifter.png",
         title: "Glifter",
         subtitle: "Back Office - Gestion articles",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Participation au développement de Glifter - Personal Knowledge Assistant. Agrégateur de sources d’informations pour produire et partager des articles. Outil d'édition d'article ressemblant à l'application Medium",
         technos: [javascript, vue, sass],
         category: "pro",
         year: 2019,
@@ -227,40 +238,29 @@ const projects = [
         screenshot: "axiom.png",
         title: "Axiom",
         subtitle: "Back Office - Outil communication",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Participation au développement d'AXIOM. Une application desktop construite avec NW.js permettant de gérer son réseau, sécuriser ses échanges et certifier ses documents.",
         technos: [javascript, vue, sass],
         category: "pro",
-        year: 2019,
+        year: 2018,
         githubLink: null,
         webLink: null,
         customer: {
             name: "Antiopea",
             type: "Startup",
             location: "Paris",
-            duration: 3,
+            duration: 1,
             logo: "antiopea.png",
             link: "https://antiopea.com/"
         }
     },
     {
-        screenshot: "psycho.png",
-        title: "jeanyvesgauthier.com",
-        subtitle: "Site vitrine - Psychanalyste",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [vue, nuxt, sass, firebase, javascript, material, pwa],
-        category: "pro",
-        year: 2019,
-        githubLink: null,
-        webLink: null,
-    },
-    {
         screenshot: "optiquebeaubreuil.png",
         title: "Optique Beaubreuil",
         subtitle: "Site vitrine - Opticien",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Réalisation d'un site vitrine. Maquette du site web. Réalisation d'une Single Page Application pour le front end avec Vue.js. Réalisation d'un espace d'administration pour ajouter/modifier/supprimer les contenus du site web. Réalisation d'une API avec Node.js et Express",
         technos: [javascript, vue],
         category: "pro",
-        year: 2019,
+        year: 2018,
         githubLink: null,
         webLink: null,
     },
@@ -268,10 +268,10 @@ const projects = [
         screenshot: "optiqueduhameau.png",
         title: "Optique du Hameau",
         subtitle: "Site vitrine - Opticien",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Réalisation d'un site vitrine. Maquette du site web. Réalisation d'une Single Page Application pour le front end avec Vue.js. Réalisation d'un espace d'administration pour ajouter/modifier/supprimer les contenus du site web. Réalisation d'une API avec Node.js et Express",
         technos: [javascript, vue],
         category: "pro",
-        year: 2019,
+        year: 2018,
         githubLink: null,
         webLink: null,
     },
@@ -279,10 +279,10 @@ const projects = [
         screenshot: "marialagoutte.png",
         title: "Maria la goutte",
         subtitle: "Site vitrine - Artiste",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Développement d'un site web pour présenter l'activité artistique de 'Maria la goutte'. Mise au point de la maquette du site. Intégration au format Html. Développement d'un espace d'administration sur mesure avec Laravel.",
         technos: [javascript, vue],
         category: "pro",
-        year: 2019,
+        year: 2017,
         githubLink: null,
         webLink: null,
     },
@@ -295,7 +295,7 @@ const projects = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [vue, nuxt, vuetify, sass, firebase, javascript, material, pwa],
         category: "perso",
-        year: 2019,
+        year: 2020,
         githubLink: null,
         webLink: null,
     },
@@ -306,7 +306,7 @@ const projects = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [vue, pwa],
         category: "perso",
-        year: 2019,
+        year: 2017,
         githubLink: null,
         webLink: "https://colinfaivre.com",
     },
@@ -317,7 +317,7 @@ const projects = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [vue, pwa],
         category: "perso",
-        year: 2019,
+        year: 2017,
         githubLink: null,
         webLink: "https://sourirepanique.com",
     },
@@ -328,7 +328,7 @@ const projects = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [javascript, vue],
         category: "perso",
-        year: 2019,
+        year: 2017,
         githubLink: null,
         webLink: null,
     },
@@ -363,7 +363,7 @@ const projects = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [vue, javascript, material, pwa],
         category: "game",
-        year: 2019,
+        year: 2020,
         githubLink: "https://github.com/colinfaivre/vue-tetris",
         webLink: null,
     },
@@ -395,7 +395,7 @@ const projects = [
         screenshot: "gmailclone.png",
         title: "Le Gmail de Chuck Norris",
         subtitle: "Un clone de Gmail",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Réalisation d'un clone de l'application Gmail. La boite mail se remplit de citations de Chuck Norris. Il est possible de placer des emails dans la corbeille ou dans les favoris.",
         technos: [javascript, material],
         category: "clone",
         year: 2019,
@@ -406,61 +406,61 @@ const projects = [
         screenshot: "slackclone.png",
         title: "Un clone de Slack",
         subtitle: "Un clone de Slack",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: "Réalisation d'un clone de l'application Slack. On peut créer des channels et ajouter des interlocuteurs, personne ne viendra vous déranger ...",
         technos: [javascript, vue],
         category: "clone",
         year: 2019,
         githubLink: "https://github.com/colinfaivre/slack-clone",
-        webLink: null,
+        webLink: "https://slack-clone-db2d2.web.app/create-channel",
     },
 
     // Augemented reality
     {
         screenshot: "aframe.png",
-        title: "A-Frame",
-        subtitle: "Un projet pour tester A-frame",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        title: "GIF augmenté",
+        subtitle: "Un projet pour tester ar.js et le framemork 3D A-frame",
+        text: "Une application pour placer un GIF en réalité augmenté sur un marqueur préalablement imprimé sur une feuille de papier. Simple et efficace pour refaire la déco du bureau !",
         technos: [javascript],
         category: "ar",
-        year: 2019,
+        year: 2020,
         githubLink: null,
         webLink: null,
     },
     {
         screenshot: "aframe.png",
-        title: "A-Frame",
+        title: "Montgolfière augmentée",
         subtitle: "Un projet pour tester A-frame",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technos: [javascript],
         category: "ar",
-        year: 2019,
+        year: 2020,
         githubLink: null,
         webLink: null,
     },
 
     // Web of things
-    {
-        screenshot: "wot.png",
-        title: "Web of things",
-        subtitle: "Un projet d'objet connecté",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [javascript],
-        category: "wot",
-        year: 2019,
-        githubLink: null,
-        webLink: null,
-    },
-    {
-        screenshot: "wot.png",
-        title: "Web of things",
-        subtitle: "Un projet d'objet connecté",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [javascript],
-        category: "wot",
-        year: 2019,
-        githubLink: null,
-        webLink: null,
-    },
+    // {
+    //     screenshot: "wot.png",
+    //     title: "Web of things",
+    //     subtitle: "Un projet d'objet connecté",
+    //     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //     technos: [javascript],
+    //     category: "wot",
+    //     year: 2019,
+    //     githubLink: null,
+    //     webLink: null,
+    // },
+    // {
+    //     screenshot: "wot.png",
+    //     title: "Web of things",
+    //     subtitle: "Un projet d'objet connecté",
+    //     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //     technos: [javascript],
+    //     category: "wot",
+    //     year: 2019,
+    //     githubLink: null,
+    //     webLink: null,
+    // },
 ]
 
 export const db = {
