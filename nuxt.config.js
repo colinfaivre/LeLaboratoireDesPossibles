@@ -1,5 +1,3 @@
-import colors from 'vuetify/es5/util/colors'
-
 export default {
   mode: 'spa',
   /*
@@ -10,7 +8,17 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      
+      // Google Search
+      { hid: 'description', name: 'description', content: 'Votre application web développée en Vue.js' },
+      { name: 'keywords', content: 'le laboratoire des possibles, création, site internet, site web, web designer, développeur web, application web, vue.js' },
+      // OpengGraph image (social media sharable)
+      { property: 'og:image', content: '/og-image.png' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '600' },
+      { property: 'og:description', content: 'Votre application web développée en Vue.js' },
+      { property: 'og:url', content: 'https://lelaboratoiredespossibles.com' },
+      { property: 'og:title', content: 'Le laboratoire des possibles' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

@@ -197,7 +197,7 @@ body {
   font-size: 18px;
 }
 .default-background {
-  background: rgb(231, 231, 231);
+  background: rgb(238, 238, 238);
 }
 .close-button {
   width: 35px;
