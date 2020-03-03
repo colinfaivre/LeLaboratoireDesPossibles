@@ -7,7 +7,7 @@
     <p>
       <strong>Propriétaire</strong> : Le laboratoire des possibles
       <br>
-      Entreprise individuelle (Colin Faivre) Siret : 811 677 459 00026 – 48 rue Marcel Talabot 87220 Feytiat FRANCE<br />
+      Micro-entreprise (Colin Faivre) Siret : 811 677 459 00026 – 48 rue Marcel Talabot 87220 Feytiat FRANCE<br />
       <strong>Créateur</strong>  : <a href="Le laboratoire des possibles">Colin Faivre</a><br />
       <strong>Responsable publication</strong> : Colin Faivre – colin.faivre@gmail.com<br />
       Le responsable publication est une personne physique ou une personne morale.<br />

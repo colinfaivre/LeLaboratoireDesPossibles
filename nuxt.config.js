@@ -8,14 +8,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      
+
       // Google Search
       { hid: 'description', name: 'description', content: 'Votre application web développée en Vue.js' },
       { name: 'keywords', content: 'le laboratoire des possibles, création, site internet, site web, web designer, développeur web, application web, vue.js' },
       // OpengGraph image (social media sharable)
       { property: 'og:image', content: '/og-image.png' },
-      { property: 'og:image:width', content: '1200' },
-      { property: 'og:image:height', content: '600' },
+      { property: 'og:image:width', content: '1051' },
+      { property: 'og:image:height', content: '450' },
       { property: 'og:description', content: 'Votre application web développée en Vue.js' },
       { property: 'og:url', content: 'https://lelaboratoiredespossibles.com' },
       { property: 'og:title', content: 'Le laboratoire des possibles' },
@@ -66,7 +66,7 @@ export default {
     },
   },
   workbox: {
-    offlineAssets: ['/', '/ar/index.html', '/clones/index.html', '/games/index.html', '/perso/index.html', '/legal/index.html', '/pro/index.html', '/tech/index.html', '/wot/index.html'],
+    offlineAssets: ['/index.html', '/ar/index.html', '/clones/index.html', '/games/index.html', '/perso/index.html', '/legal/index.html', '/pro/index.html', '/tech/index.html', '/wot/index.html'],
     offlinePage: '/404.html',
   },
   generate: {
