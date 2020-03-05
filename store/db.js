@@ -183,14 +183,14 @@ const projects = [
         category: "pro",
         year: 2019,
         githubLink: null,
-        webLink: null,
+        webLink: "https://www.web-id.fr/",
         customer: {
             name: "WebId",
             type: "Agence web",
             location: "Lyon",
             duration: 4,
             logo: "webId.png",
-            link: "https://www.web-id.fr/"
+            backgroundColor: "#482768",
         }
     },
     {
@@ -205,14 +205,14 @@ const projects = [
         category: "pro",
         year: 2019,
         githubLink: null,
-        webLink: null,
+        webLink: "https://barnaby.club/",
         customer: {
             name: "Barnaby",
             type: "Startup",
             location: "Bruxelles",
             duration: 1,
             logo: "barnaby.png",
-            link: "https://barnaby.club/"
+            backgroundColor: "#909cf9",
         }
     },
     {
@@ -227,14 +227,14 @@ const projects = [
         category: "pro",
         year: 2019,
         githubLink: null,
-        webLink: null,
+        webLink: "https://www.myjungly.com",
         customer: {
             name: "MyJungly",
             type: "Agence web",
             location: "Paris",
             duration: 4,
             logo: "myJungly.png",
-            link: "https://www.myjungly.com"
+            backgroundColor: "#303030",
         }
     },
     {
@@ -250,14 +250,14 @@ const projects = [
         category: "pro",
         year: 2019,
         githubLink: null,
-        webLink: null,
+        webLink: "https://www.myjungly.com",
         customer: {
             name: "MyJungly",
             type: "Agence web",
             location: "Paris",
             duration: 3,
             logo: "myJungly.png",
-            link: "https://www.myjungly.com"
+            backgroundColor: "#303030",
         }
     },
     {
@@ -273,14 +273,14 @@ const projects = [
         category: "pro",
         year: 2018,
         githubLink: null,
-        webLink: null,
+        webLink: "https://antiopea.com/",
         customer: {
             name: "Antiopea",
             type: "Startup",
             location: "Paris",
             duration: 1,
             logo: "antiopea.png",
-            link: "https://antiopea.com/"
+            backgroundColor: "#965abf",
         }
     },
     {
@@ -295,7 +295,7 @@ const projects = [
         category: "pro",
         year: 2018,
         githubLink: null,
-        webLink: null,
+        webLink: "http://optiquebeaubreuil.com/",
     },
     {
         screenshot: "optiqueduhameau.png",
@@ -309,7 +309,7 @@ const projects = [
         category: "pro",
         year: 2018,
         githubLink: null,
-        webLink: null,
+        webLink: "http://optiqueduhameau.com/",
     },
     {
         screenshot: "marialagoutte.png",
@@ -338,8 +338,8 @@ const projects = [
         technos: [vue, nuxt, vuetify, sass, firebase, javascript, material, pwa],
         category: "perso",
         year: 2020,
-        githubLink: null,
-        webLink: null,
+        githubLink: "https://github.com/colinfaivre/LeLaboratoireDesPossibles",
+        webLink: "https://lelaboratoiredespossibles.com",
     },
     {
         screenshot: "colinfaivre.jpeg",

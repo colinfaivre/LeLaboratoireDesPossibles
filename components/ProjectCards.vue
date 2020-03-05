@@ -3,7 +3,7 @@
 
         <v-card
             v-for="project in projects" :key="project.index"
-            class="ma-2"
+            class="ma-3"
             width="450"
             min-width="320"
         >
@@ -13,68 +13,68 @@
                 :src="require('@/assets/images/screenshots/' + project.screenshot )"
             >
             </v-img>
-            <div class="on-card">
-                <v-btn
-                    v-if="project.githubLink"
-                    :href="project.githubLink"
-                    target="_blank" 
-                    large
-                    fab
-                    color="primary"
-                >
-                    <v-icon color="secondary">mdi-github-circle</v-icon>
-                </v-btn>
-                <v-btn
-                    v-if="project.webLink"
-                    :href="project.webLink"
-                    target="_blank" 
-                    large
-                    fab 
-                    color="primary"
-                >
-                    <v-icon color="secondary">mdi-arrow-right</v-icon>
-                </v-btn>
-                <v-btn
-                    v-if="project.bookLink"
-                    :href="project.bookLink"
-                    target="_blank" 
-                    large
-                    fab 
-                    color="primary"
-                >
-                    <v-icon color="secondary">mdi-book-open-page-variant</v-icon>
-                </v-btn>
-            </div>
 
             <v-card-title
                 v-if="!project.customer"
-                color="primary"
-                class="mb-6"
+                class="grey darken-4 secondary--text"
             >
                 {{ project.title }}
             </v-card-title>
 
             <div
                 v-if="project.customer" 
-                class="mx-4 mt-4 customer"
+                class="px-4 py-2 customer"
+                :style="{backgroundColor: project.customer.backgroundColor}"
             >
-                <div class="d-flex">
-                    <a :href="project.customer.link" target="_blank">
+                <div class="d-flex align-center">
+                    <a :href="project.customer.link" target="_blank" class="d-flex align-center justify-center">
                         <img
                             :src="require('@/assets/images/customers/' + project.customer.logo)"
                             :alt="project.customer.name"
                             height="50px"
                         >
                     </a>
-                    <div class="customer-description ml-2">
+                    <div class="customer-description ml-4">
                         <strong>{{ project.customer.type }}</strong>
-                        <span class="grey--text">{{ project.customer.location }}</span>
+                        <span>{{ project.customer.location }}</span>
                         <br/> 
-                        Mission de 
+                        <span v-if="project.customer.duration === 1">Mission d' </span>
+                        <span v-else>Mission de </span>
                         {{ project.customer.duration }} mois
                     </div>
                 </div>
             </div>
+
+            <div class="on-card">
+                <v-btn
+                    v-if="project.githubLink"
+                    :href="project.githubLink"
+                    target="_blank" 
+                    fab
+                    color="grey lighten-2"
+                >
+                    <v-icon color="primary lighten-2">mdi-github-circle</v-icon>
+                </v-btn>
+                <v-btn
+                    v-if="project.webLink"
+                    :href="project.webLink"
+                    target="_blank" 
+                    fab 
+                    color="grey lighten-2"
+                >
+                    <v-icon color="primary lighten-2">mdi-arrow-right</v-icon>
+                </v-btn>
+                <v-btn
+                    v-if="project.bookLink"
+                    :href="project.bookLink"
+                    target="_blank" 
+                    fab 
+                    color="grey lighten-2"
+                >
+                    <v-icon color="primary lighten-2">mdi-book-open-page-variant</v-icon>
+                </v-btn>
+            </div>
+            
             <v-card-text>
                 <div class="text--primary">
                     {{ project.subtitle }}
@@ -124,7 +124,7 @@
     position: absolute;
     z-index: 2;
     right: 15px;
-    margin-top: -30px;
+    margin-top: -28px;
 }
 .project-text {
     height: 100px;
@@ -132,5 +132,8 @@
 .date {
     color: #9e9e9e;
     font-size: 15px;
+}
+.customer-description {
+    color: white;
 }
 </style>
