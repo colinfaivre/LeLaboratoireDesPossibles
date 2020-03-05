@@ -146,11 +146,11 @@ import TheFooter from '@/components/TheFooter'
           icon: "mdi-microscope",
           name: "Clones",
         },
-        {
-          link: "/ar",
-          icon: "mdi-cube-scan",
-          name: "Réalité augmentée",
-        },
+        // {
+        //   link: "/ar",
+        //   icon: "mdi-cube-scan",
+        //   name: "Réalité augmentée",
+        // },
         // {
         //   link: "/wot",
         //   icon: "mdi-space-station",

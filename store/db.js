@@ -96,36 +96,46 @@ const categories = [
     {
         id: "pro",
         name: "Projets professionnels",
-        // description: `
-        //     Le laboratoire des possible c'est avant tout une entreprise
-        //     qui se consacre au développement Front-end. Le framework Vue.js est
-        //     utilisé pour créer des applications web. Back-offices, dates, projets (longueurs), nombre de clients...
-        // `
+        description: `
+            Des applications web, back-offices et sites vitrines développés pour le compte d'agences web, startups et particuliers.
+            Les principales technologies utilisées sont vue.js, nuxt et vuetify pour créer des applications web progressives respectant les normes du Material Design.
+        `
     },
     {
         id: "perso",
         name: "Projets personnels",
-        // description: `
-        //     Avant que l'entreprise ne voie le jour, de nombreux sites internets
-        //     à l'usage de leur développeur ont servis un but artistique pour coller aux plaisirs du moment.        
-        // `
+        description: `
+            Les projets personnels qui me tiennent à coeur.
+            Parti d'un besoin immense de donner la première place à mes projets artistiques "Colin Faivre" et "Sourire Panique"
+            autant qu'à l'association "Sémaphore" qui m'a offert un soutien inconditionnel. J'ai appris sur le tas à développer
+            des sites webs avec la passion de donner vie à ces projets.     
+        `
     },
     {
         id: "game",
         name: "Jeux",
-        // description: `
-        //     Le laboratoire des possibles, c'est aussi retrouver le plaisir simple de recréer les jeux d'arcade de notre enfance.
-        //     Pour challenger ses connaissanes en JS et repousser les limites de l'utilisation classique du HTML et du CSS.
-        // `
+        description: `
+            Le laboratoire des possibles, c'est aussi retrouver le plaisir simple de recréer les jeux d'arcade de mon enfance.
+            C'est un terrain de jeu sans pareil pour continuer d'apprendre le métier.
+        `,
+        quote: `
+            "Below the surface of the machine, the program moves. 
+            Without effort, it expands and contracts.
+            In great harmony, electrons scatter and regroup.
+            The forms on the monitor are but ripples on the water.
+            The essence stays invisibly below." — Master Yuan-Ma, The Book of Programming
+        `,
     },
     {
         id: "clone",
         name: "Clones",
-        // description: `
-        //     Que serait un laboratoire sans ses expériences dangereuses et controversées ?
-        //     Cette pièce du laboratoire se consacre entièrement à la reproduction plus ou moins fidèle d'applications bien connues.
-        //     Reproductions et clones ont, la première place. Peureux, s'abstenir.
-        // `
+        description: `
+            Que serait un laboratoire sans ses expériences dangereuses et controversées ?
+            Cette pièce du laboratoire se consacre entièrement à la reproduction plus ou moins fidèle d'applications bien connues.
+        `,
+        quote: `
+            "Se tenir sur les épaules des géants et voir plus loin ... Voir dans l'invisible, à travers l'espace et le temps." - Jean-Claude Ameisen
+        `
     },
     {
         id: "ar",
@@ -151,7 +161,10 @@ const projects = [
         screenshot: "psycho.png",
         title: "jeanyvesgauthier.com",
         subtitle: "Site vitrine - Psychanalyste",
-        text: "Développement d'une progressive web app pour le site vitrine d'un psychanalyste. L'app propose à l'utilisateur de l'installer sur l'écran d'accueil de son smartphone et elle est ensuite utilisable sans réseau.",
+        text: `
+            Développement d'une progressive web app pour le site vitrine d'un psychanalyste.
+            L'app propose à l'utilisateur de l'installer sur l'écran d'accueil de son smartphone et elle est ensuite utilisable sans réseau.
+        `,
         technos: [vue, nuxt, sass, firebase, javascript, material, pwa],
         category: "pro",
         year: 2020,
@@ -162,7 +175,10 @@ const projects = [
         screenshot: "sapiendo.png",
         title: "Sapiendo",
         subtitle: "Back Office - Site conseil retraite",
-        text: "Participation au développement du front de l'espace admin  de https://www.sapiendo-retraite.fr Un site spécialisé dans le calcul de retraite réalisé sous Laravel. Intégration du front du site client.",
+        text: `
+            Participation au développement du front de l'espace admin  de https://www.sapiendo-retraite.fr
+            Un site spécialisé dans le calcul de retraite réalisé sous Laravel. Intégration du front du site client.
+        `,
         technos: [vue, vuetify, sass, material],
         category: "pro",
         year: 2019,
@@ -181,7 +197,10 @@ const projects = [
         screenshot: "barnaby.jpg",
         title: "Barnaby",
         subtitle: "Application web - Commande de boissons",
-        text: "Ajout d'une fonctionnalité sur https://Barnaby.club pour permettre à l'utilisateur de commander ses boissons dans un bar à partir de l'application web développée (QR code de sa table).",
+        text: `
+            Ajout d'une fonctionnalité sur https://Barnaby.club pour permettre à l'utilisateur de commander ses boissons
+            depuis sa table en scannant un QR code.
+        `,
         technos: [javascript, vue, nuxt, sass],
         category: "pro",
         year: 2019,
@@ -199,8 +218,11 @@ const projects = [
     {
         screenshot: "novaccess.png",
         title: "Novaccess",
-        subtitle: "Back Office - Application ouvre portails",
-        text: "Développement du backoffice d'une application permettant d'ouvrir des portes de parkings privés. Gestion des utilisateurs, de leurs droits et abonnements",
+        subtitle: "Back Office - Application ouverture de portails",
+        text: `
+            Développement du backoffice d'une application permettant d'ouvrir des portes de parkings privés.
+            Gestion des utilisateurs, de leurs droits et abonnements
+        `,
         technos: [vue, typescript, buefy, sass],
         category: "pro",
         year: 2019,
@@ -218,8 +240,12 @@ const projects = [
     {
         screenshot: "glifter.png",
         title: "Glifter",
-        subtitle: "Back Office - Gestion articles",
-        text: "Participation au développement de Glifter - Personal Knowledge Assistant. Agrégateur de sources d’informations pour produire et partager des articles. Outil d'édition d'article ressemblant à l'application Medium",
+        subtitle: "Back Office - Gestion d'articles",
+        text: `
+            Participation au développement de Glifter - Personal Knowledge Assistant.
+            Agrégateur de sources d’informations pour produire et partager des articles.
+            Outil d'édition d'article se rapprochant de celui de l'application Medium
+        `,
         technos: [javascript, vue, sass],
         category: "pro",
         year: 2019,
@@ -237,8 +263,12 @@ const projects = [
     {
         screenshot: "axiom.png",
         title: "Axiom",
-        subtitle: "Back Office - Outil communication",
-        text: "Participation au développement d'AXIOM. Une application desktop construite avec NW.js permettant de gérer son réseau, sécuriser ses échanges et certifier ses documents.",
+        subtitle: "Back Office - Outil de communication",
+        text: `
+            Participation au développement d'AXIOM.
+            Une application desktop construite avec NW.js permettant de gérer son réseau,
+            sécuriser ses échanges et certifier ses documents.
+        `,
         technos: [javascript, vue, sass],
         category: "pro",
         year: 2018,
@@ -257,7 +287,10 @@ const projects = [
         screenshot: "optiquebeaubreuil.png",
         title: "Optique Beaubreuil",
         subtitle: "Site vitrine - Opticien",
-        text: "Réalisation d'un site vitrine. Maquette du site web. Réalisation d'une Single Page Application pour le front end avec Vue.js. Réalisation d'un espace d'administration pour ajouter/modifier/supprimer les contenus du site web. Réalisation d'une API avec Node.js et Express",
+        text: `
+            Réalisation d'une application web vitrine en vue.js pour présenter les boutiques d'un opticien.
+            Espace d'administration de contenus réalisé avec express.js.
+        `,
         technos: [javascript, vue],
         category: "pro",
         year: 2018,
@@ -268,7 +301,10 @@ const projects = [
         screenshot: "optiqueduhameau.png",
         title: "Optique du Hameau",
         subtitle: "Site vitrine - Opticien",
-        text: "Réalisation d'un site vitrine. Maquette du site web. Réalisation d'une Single Page Application pour le front end avec Vue.js. Réalisation d'un espace d'administration pour ajouter/modifier/supprimer les contenus du site web. Réalisation d'une API avec Node.js et Express",
+        text: `
+            Réalisation d'une application web vitrine en vue.js pour présenter les boutiques d'un opticien.
+            Espace d'administration de contenus réalisé avec express.js.
+        `,
         technos: [javascript, vue],
         category: "pro",
         year: 2018,
@@ -279,7 +315,10 @@ const projects = [
         screenshot: "marialagoutte.png",
         title: "Maria la goutte",
         subtitle: "Site vitrine - Artiste",
-        text: "Développement d'un site web pour présenter l'activité artistique de 'Maria la goutte'. Mise au point de la maquette du site. Intégration au format Html. Développement d'un espace d'administration sur mesure avec Laravel.",
+        text: `
+            Développement d'un site web pour présenter l'activité artistique de 'Maria la goutte'.
+            Développement d'un espace d'administration sur mesure avec Laravel.
+        `,
         technos: [javascript, vue],
         category: "pro",
         year: 2017,
@@ -292,7 +331,10 @@ const projects = [
         screenshot: "lelaboratoiredespossibles.jpeg",
         title: "Le laboratoire des possibles",
         subtitle: "Site vitrine - Developpeur",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: `
+            Réalisation d'un application web vitrine pour présenter les projets de développement du Laboratoire des possibles.
+            Progressive web app développée en vue.js avec nuxt et respectant les normes du Material design.
+        `,
         technos: [vue, nuxt, vuetify, sass, firebase, javascript, material, pwa],
         category: "perso",
         year: 2020,
@@ -303,7 +345,9 @@ const projects = [
         screenshot: "colinfaivre.jpeg",
         title: "colinfaivre.com",
         subtitle: "Site vitrine - Artiste",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: `
+            Réalisation d'un site vitrine pour présenter l'activité de Colin Faivre, un artiste expérimental.
+        `,
         technos: [vue, pwa],
         category: "perso",
         year: 2017,
@@ -314,7 +358,10 @@ const projects = [
         screenshot: "sourirepanique.jpeg",
         title: "sourirepanique.com",
         subtitle: "Site vitrine - Groupe",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: `
+            Réalisation d'un site vitrine pour présenter le groupe Sourire Panique, un duo banjo / batterie hors du commun.
+            Collaboration avec Gaëlle Maas, illustratrice.
+        `,
         technos: [vue, pwa],
         category: "perso",
         year: 2017,
@@ -323,9 +370,11 @@ const projects = [
     },
     {
         screenshot: "semaphore.jpeg",
-        title: "Semaphore",
+        title: "Sémaphore",
         subtitle: "Plateforme - Artistes",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: `
+            Réalisation d'un site pour l'association Sémaphore. Mise en relation d'artistes avec les services de l'association.
+        `,
         technos: [javascript, vue],
         category: "perso",
         year: 2017,
@@ -338,18 +387,27 @@ const projects = [
         screenshot: "asteroid.png",
         title: "Vanilla JS Asteroid",
         subtitle: "Arcade game",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: `
+            "Space War" un des premiers jeux vidéo créés au MIT en 1961.
+            Accompagné du livre "Introducing avascript game development", j'ai développé une version personnelle.
+            J'ai modifié la taille des astéroides ce qui rend le jeu plutot difficile...
+            Je n'ai pas encore réussi à passer le premier niveau du jeu !
+        `,
         technos: [javascript],
         category: "game",
         year: 2019,
         githubLink: null,
         webLink: null,
+        bookLink: "https://www.apress.com/gp/book/9781484232514",
     },
     {
         screenshot: "tetris.png",
         title: "Vue.js Tetris",
-        subtitle: "Teris game",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        subtitle: "Tetris game",
+        text: `
+            Au cours d'une formation JS à laquelle j'ai participé, il était demandé de contribuer à un projet sur github.
+            J'ai forké un projet de Tetris créé en vue.js et j'ai proposé des améliorations au niveau de l'interface utilisateur.
+        `,
         technos: [vue, javascript, material, pwa],
         category: "game",
         year: 2019,
@@ -360,7 +418,10 @@ const projects = [
         screenshot: "breakout.png",
         title: "Breakout",
         subtitle: "Jeu de casse-brique",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: `
+            Le traditionnel jeu de casse-brique revisité par Mozilla. Un projet intéressant pour continuer de découvrir l'utilisation de l'élément <canvas>
+            En voici une version personelle sous forme d'application web progressive.
+        `,
         technos: [vue, javascript, material, pwa],
         category: "game",
         year: 2020,
@@ -368,21 +429,13 @@ const projects = [
         webLink: null,
     },
     {
-        screenshot: "tictactoe.png",
-        title: "Vanilla JS TicTacToe",
-        subtitle: "Morpion",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [javascript, material],
-        category: "game",
-        year: 2019,
-        githubLink: "https://github.com/colinfaivre/VanillaJs-TicTacToe",
-        webLink: null,
-    },
-    {
         screenshot: "elevator.png",
         title: "Vanilla JS - Elevators",
         subtitle: "Simulation d'ascenseurs",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        text: `
+            Une simulation reproduisant la logique d'un immeuble avec des boutons d'appel d'ascenseur à chaque étage
+            et deux ascenseurs. Un devoir réalisé en cours de formation JS pour utiliser la programmation orientée objet.
+        `,
         technos: [javascript, material],
         category: "game",
         year: 2019,

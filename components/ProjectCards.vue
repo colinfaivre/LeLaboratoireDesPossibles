@@ -34,6 +34,16 @@
                 >
                     <v-icon color="secondary">mdi-arrow-right</v-icon>
                 </v-btn>
+                <v-btn
+                    v-if="project.bookLink"
+                    :href="project.bookLink"
+                    target="_blank" 
+                    large
+                    fab 
+                    color="primary"
+                >
+                    <v-icon color="secondary">mdi-book-open-page-variant</v-icon>
+                </v-btn>
             </div>
 
             <v-card-title
