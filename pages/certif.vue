@@ -14,22 +14,20 @@
           <div class="d-flex">
             <img
               class="white--text card-left"
-              width="150px"
-              height="150px"
               :src="require('@/assets/images/certifs/' + certification.image)"
             />
             <div class="ml-5 card-right d-flex flex-column justify-space-between">
               <div class="header d-flex justify-space-between">
                 <div class="left">
-                  <img
-                    v-if="certification.authorityImage"
-                    class="white--text"
-                    height="35px"
-                    :src="require('@/assets/images/certifs/' + certification.authorityImage)"
-                  />
                   <div class="title">
                     {{ certification.title }}
                   </div>
+                  <img
+                    v-if="certification.authorityImage"
+                    width="90px"
+                    class="white--text"
+                    :src="require('@/assets/images/certifs/' + certification.authorityImage)"
+                  />
                 </div>
 
                 <v-btn
@@ -78,5 +76,15 @@ export default {
 <style lang="scss" scoped>
 .header, .card-right, .footer {
   width: 100%;
+}
+.card-left {
+  width: 150px;
+  height: 150px;
+}
+@media (max-width: 500px) {
+    .card-left {
+    width: 90px;
+    height: 90px;
+  }
 }
 </style>

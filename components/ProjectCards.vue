@@ -53,7 +53,7 @@
                     fab
                     :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
-                    <v-icon color="white">mdi-github-circle</v-icon>
+                    <v-icon color="secondary">mdi-github-circle</v-icon>
                 </v-btn>
                 <v-btn
                     v-if="project.webLink"
@@ -62,7 +62,7 @@
                     fab 
                     :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
-                    <v-icon color="white">mdi-arrow-right</v-icon>
+                    <v-icon color="secondary">mdi-arrow-right</v-icon>
                 </v-btn>
                 <v-btn
                     v-if="project.bookLink"
@@ -71,7 +71,7 @@
                     fab 
                     :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
-                    <v-icon color="white">mdi-book-open-page-variant</v-icon>
+                    <v-icon color="secondary">mdi-book-open-page-variant</v-icon>
                 </v-btn>
             </div>
             

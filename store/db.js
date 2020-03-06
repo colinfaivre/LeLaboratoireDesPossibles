@@ -534,7 +534,7 @@ const certifications = [
     },
     {
         image: "nuxt.png",
-        title: "Nuxt.js - Vue.js on Steroids",
+        title: "Nuxt.js",
         subtitle: "subtitle",
         text: "Content text",
         year: "En cours",
@@ -544,7 +544,7 @@ const certifications = [
     },
     {
         image: "es6.png",
-        title: "Keeping up with the Javascripts : ES6",
+        title: "ES6 Certification",
         subtitle: "subtitle",
         text: "Content text",
         year: "2019",
@@ -564,7 +564,7 @@ const certifications = [
     },
     {
         image: "firebase.png",
-        title: "Build Web Apps with Vue JS 2 & Firebase",
+        title: "Vue JS & Firebase",
         subtitle: "subtitle",
         text: "Content text",
         year: "2019",
