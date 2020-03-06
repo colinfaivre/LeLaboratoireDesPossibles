@@ -169,7 +169,7 @@ const projects = [
         category: "pro",
         year: 2020,
         githubLink: null,
-        webLink: null,
+        webLink: "http://jeanyves-gauthier-psychanalyste.com",
     },
     {
         screenshot: "sapiendo.png",
@@ -190,7 +190,8 @@ const projects = [
             location: "Lyon",
             duration: 4,
             logo: "webId.png",
-            backgroundColor: "#482768",
+            color: "#301a44",
+            colorLight: "#482768",
         }
     },
     {
@@ -212,7 +213,8 @@ const projects = [
             location: "Bruxelles",
             duration: 1,
             logo: "barnaby.png",
-            backgroundColor: "#909cf9",
+            color: "#6273f6",
+            colorLight: "#909cf9",
         }
     },
     {
@@ -234,7 +236,8 @@ const projects = [
             location: "Paris",
             duration: 4,
             logo: "myJungly.png",
-            backgroundColor: "#303030",
+            color: "#171717",
+            colorLight: "#303030",
         }
     },
     {
@@ -257,7 +260,8 @@ const projects = [
             location: "Paris",
             duration: 3,
             logo: "myJungly.png",
-            backgroundColor: "#303030",
+            color: "#171717",
+            colorLight: "#303030",
         }
     },
     {
@@ -280,7 +284,8 @@ const projects = [
             location: "Paris",
             duration: 1,
             logo: "antiopea.png",
-            backgroundColor: "#965abf",
+            color: "#7c40a3",
+            colorLight: "#965abf",
         }
     },
     {

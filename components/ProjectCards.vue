@@ -16,7 +16,7 @@
 
             <v-card-title
                 v-if="!project.customer"
-                class="grey darken-4 secondary--text"
+                class="primary lighten-1  white--text"
             >
                 {{ project.title }}
             </v-card-title>
@@ -24,7 +24,7 @@
             <div
                 v-if="project.customer" 
                 class="px-4 py-2 customer"
-                :style="{backgroundColor: project.customer.backgroundColor}"
+                :style="{backgroundColor: project.customer.colorLight}"
             >
                 <div class="d-flex align-center">
                     <a :href="project.customer.link" target="_blank" class="d-flex align-center justify-center">
@@ -51,27 +51,27 @@
                     :href="project.githubLink"
                     target="_blank" 
                     fab
-                    color="grey lighten-2"
+                    :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
-                    <v-icon color="primary lighten-2">mdi-github-circle</v-icon>
+                    <v-icon color="white">mdi-github-circle</v-icon>
                 </v-btn>
                 <v-btn
                     v-if="project.webLink"
                     :href="project.webLink"
                     target="_blank" 
                     fab 
-                    color="grey lighten-2"
+                    :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
-                    <v-icon color="primary lighten-2">mdi-arrow-right</v-icon>
+                    <v-icon color="white">mdi-arrow-right</v-icon>
                 </v-btn>
                 <v-btn
                     v-if="project.bookLink"
                     :href="project.bookLink"
                     target="_blank" 
                     fab 
-                    color="grey lighten-2"
+                    :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
-                    <v-icon color="primary lighten-2">mdi-book-open-page-variant</v-icon>
+                    <v-icon color="white">mdi-book-open-page-variant</v-icon>
                 </v-btn>
             </div>
             
