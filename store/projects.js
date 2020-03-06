@@ -4,6 +4,7 @@ export const state = () => ({
     technos: db.technos,
     projects: db.projects,
     categories: db.categories,
+    certifications: db.certifications,
 })
 
 export const getters = {

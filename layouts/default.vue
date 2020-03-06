@@ -156,15 +156,15 @@ import TheFooter from '@/components/TheFooter'
         //   icon: "mdi-space-station",
         //   name: "Internet des objets",
         // },
-        {
-          link: "/tech",
-          icon: "mdi-chip",
-          name: "Technologies utilisées",
-        },
+        // {
+        //   link: "/tech",
+        //   icon: "mdi-chip",
+        //   name: "Technologies utilisées",
+        // },
         {
           link: "/certif",
           icon: "mdi-school",
-          name: "Formation",
+          name: "Certifications",
         },
         {
           link: "/legal",
