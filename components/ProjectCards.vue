@@ -53,7 +53,7 @@
                     fab
                     :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
-                    <v-icon color="secondary">mdi-github-circle</v-icon>
+                    <v-icon color="secondary">mdi-github</v-icon>
                 </v-btn>
                 <v-btn
                     v-if="project.webLink"
