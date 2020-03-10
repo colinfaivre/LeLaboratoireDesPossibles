@@ -49,7 +49,8 @@
                 <v-btn
                     v-if="project.githubLink"
                     :href="project.githubLink"
-                    target="_blank" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     fab
                     :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
@@ -58,7 +59,8 @@
                 <v-btn
                     v-if="project.webLink"
                     :href="project.webLink"
-                    target="_blank" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     fab 
                     :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
@@ -67,7 +69,8 @@
                 <v-btn
                     v-if="project.bookLink"
                     :href="project.bookLink"
-                    target="_blank" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     fab 
                     :style="{backgroundColor: project.customer ? project.customer.color : '#1E1E1E'}"
                 >
@@ -91,6 +94,7 @@
                         :href="techno.url"
                         :key="techno.index"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="mr-2"
                     >
                         <img

@@ -10,7 +10,8 @@
       v-for="socialNetwork in socialNetworks"
       :key="socialNetwork.index"
       :href="socialNetwork.link"
-      target="_blank" 
+      target="_blank"
+      rel="noopener noreferrer"
       class="mx-1"  
       text
       icon

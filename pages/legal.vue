@@ -54,7 +54,14 @@
     <p>Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n° 2004-801 du 6 août 2004 relative à l'informatique, aux fichiers et aux libertés.</p>
     <p> Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.</p>
     
-    <a target="_blank" href="https://www.subdelirium.com/generateur-de-mentions-legales/" alt="Générateur de mentions légales">subdelirium.com</a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://www.subdelirium.com/generateur-de-mentions-legales/"
+      alt="Générateur de mentions légales"
+    >
+      subdelirium.com
+    </a>
   </div>
 </template>
 

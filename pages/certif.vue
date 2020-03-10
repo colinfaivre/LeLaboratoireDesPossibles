@@ -33,7 +33,8 @@
                 <v-btn
                     v-if="certification.certifLink"
                     :href="certification.certifLink"
-                    target="_blank" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     fab 
                     color="#1E1E1E"
                 >
@@ -45,6 +46,7 @@
                 v-if="certification.webLink"  
                 :href="certification.webLink"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Course link
               </a> -->

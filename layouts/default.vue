@@ -8,7 +8,7 @@
     >
       <!-- Close button -->
       <button
-        role="close menu"
+        aria-label="close menu"
         v-if="drawer"
         @click.stop="drawer = !drawer"
         class="close-button"
@@ -18,7 +18,7 @@
 
       <!-- Menu button -->
       <v-app-bar-nav-icon
-        role="menu"
+        aria-label="menu"
         color="secondary"
         @click.stop="drawer = !drawer"
         v-if="!drawer"
@@ -43,6 +43,7 @@
       <v-btn
         href="https://www.malt.fr/profile/colinfaivre"
         target="_blank"
+        rel="noopener noreferrer"
         text
         icon
         color="secondary"

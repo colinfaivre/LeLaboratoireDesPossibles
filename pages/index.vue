@@ -26,6 +26,7 @@
             <v-btn
                 href="https://www.malt.fr/profile/colinfaivre"
                 target="_blank"
+                rel="noopener noreferrer"
                 x-large
                 class="mt-10 btn"
             >
