@@ -11,7 +11,7 @@ export default {
 
       // Google Search
       { hid: 'description', name: 'description', content: 'Votre application web développée en Vue.js' },
-      { name: 'keywords', content: 'le laboratoire des possibles, création, site internet, site web, web designer, développeur web, application web, vue.js' },
+      { hid: 'keywords', name: 'keywords', content: 'le laboratoire des possibles, création, site internet, site web, web designer, développeur web, application web, vue.js' },
       // OpengGraph image (social media sharable)
       { property: 'og:image', content: '/og-image.png' },
       { property: 'og:image:width', content: '1051' },
@@ -22,7 +22,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Orbitron&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Orbitron&display=swap' },
+      { rel: 'preconnect', href: 'https://cdn.jsdelivr.net' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
     ]
   },
   /*
