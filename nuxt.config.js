@@ -23,6 +23,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Orbitron&display=swap' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css' },
+
       { rel: 'preconnect', href: 'https://cdn.jsdelivr.net' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
     ]
@@ -85,6 +87,8 @@ export default {
   ** https://github.com/nuxt-community/vuetify-module
   */
   vuetify: {
+    // offline PWA needs defaultAssets to false to use bundled assets instead of online ressources
+    defaultAssets: false,
     customVariables: ['~/assets/variables.scss'],
     theme: {
       light: true,

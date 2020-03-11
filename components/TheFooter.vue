@@ -31,7 +31,7 @@
       socialNetworks: [
         {
           link: "https://github.com/colinfaivre",
-          icon: "mdi-github",
+          icon: "mdi-github-circle",
           name: "Github",
         },
         {
