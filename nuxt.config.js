@@ -71,7 +71,7 @@ export default {
     },
   },
   workbox: {
-    offlineAssets: ['/index.html', '/ar/index.html', '/clones/index.html', '/games/index.html', '/perso/index.html', '/legal/index.html', '/pro/index.html', '/tech/index.html', '/wot/index.html'],
+    offlineAssets: ['/index.html', '/ar/index.html', '/clones/index.html', '/games/index.html', '/perso/index.html', '/legal/index.html', '/pro/index.html', '/tech/index.html', '/wot/index.html', '/certifications/index.html', '/legal/index.html'],
     offlinePage: '/404.html',
   },
   generate: {

@@ -163,7 +163,7 @@ import TheFooter from '@/components/TheFooter'
         //   name: "Technologies utilisées",
         // },
         {
-          link: "/certif",
+          link: "/certifications",
           icon: "mdi-school",
           name: "Certifications",
         },

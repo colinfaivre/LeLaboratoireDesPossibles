@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <div class="page">
-      <h2 class="page-title">Certifications</h2>
+      <h2 class="page-title">Certifications obtenues</h2>
 
       <v-row justify="center">
           
