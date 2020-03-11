@@ -24,19 +24,19 @@
 <style lang="scss" scoped>
 .page-description {
     width: 60%;
-    text-align: center;
+    text-align: left;
     margin: auto;
     margin-bottom: 20px;
 }
 .page-quote {
     width: 60%;
-    text-align: center;
+    text-align: left;
     margin: auto;
     margin-bottom: 20px;
 }
 @media (max-width: 1000px)
 {
-    .page-description {
+    .page-description, .page-quote {
         width: 100%;
     }
 }

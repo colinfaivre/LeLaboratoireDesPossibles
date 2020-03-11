@@ -220,6 +220,9 @@ a {
   color: #1E1E1E;
 }
 .page-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: rgb(48, 48, 48);
   text-align: center;
   padding-bottom: 30px;
 }
