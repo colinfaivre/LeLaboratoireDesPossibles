@@ -165,7 +165,7 @@ const projects = [
             Développement d'une progressive web app pour le site vitrine d'un psychanalyste.
             L'app propose à l'utilisateur de l'installer sur l'écran d'accueil de son smartphone et elle est ensuite utilisable sans réseau.
         `,
-        technos: [vue, nuxt, sass, firebase, javascript, material, pwa],
+        technos: [vue, nuxt, sass, firebase, pwa],
         category: "pro",
         year: 2020,
         githubLink: null,
@@ -176,8 +176,8 @@ const projects = [
         title: "Sapiendo",
         subtitle: "Back Office - Site conseil retraite",
         text: `
-            Participation au développement du front de l'espace admin  de https://www.sapiendo-retraite.fr
-            Un site spécialisé dans le calcul de retraite réalisé sous Laravel. Intégration du front du site client.
+            Participation au développement du front de l'espace admin  d'un site spécialisé dans le calcul de retraite réalisé sous Laravel.
+            Intégration du front du site client.
         `,
         technos: [vue, vuetify, sass, material],
         category: "pro",
@@ -197,12 +197,12 @@ const projects = [
     {
         screenshot: "barnaby.jpg",
         title: "Barnaby",
-        subtitle: "Application web - Commande de boissons",
+        subtitle: "Barnaby - Commande de boissons",
         text: `
-            Ajout d'une fonctionnalité sur https://Barnaby.club pour permettre à l'utilisateur de commander ses boissons
+            Création d'un application web pour permettre à l'utilisateur de commander ses boissons
             depuis sa table en scannant un QR code.
         `,
-        technos: [javascript, vue, nuxt, sass],
+        technos: [vue, nuxt, sass],
         category: "pro",
         year: 2019,
         githubLink: null,
@@ -220,9 +220,9 @@ const projects = [
     {
         screenshot: "novaccess.png",
         title: "Novaccess",
-        subtitle: "Back Office - Application ouverture de portails",
+        subtitle: "Novaccess - Ouverture de portails",
         text: `
-            Développement du backoffice d'une application permettant d'ouvrir des portes de parkings privés.
+            Développement du back-office d'une application permettant d'ouvrir des portes de parkings privés.
             Gestion des utilisateurs, de leurs droits et abonnements
         `,
         technos: [vue, typescript, buefy, sass],
@@ -243,9 +243,9 @@ const projects = [
     {
         screenshot: "glifter.png",
         title: "Glifter",
-        subtitle: "Back Office - Gestion d'articles",
+        subtitle: "Glifter - Gestion d'articles",
         text: `
-            Participation au développement de Glifter - Personal Knowledge Assistant.
+            Participation au développement du back-office de Glifter.
             Agrégateur de sources d’informations pour produire et partager des articles.
             Outil d'édition d'article se rapprochant de celui de l'application Medium
         `,
@@ -267,9 +267,9 @@ const projects = [
     {
         screenshot: "axiom.png",
         title: "Axiom",
-        subtitle: "Back Office - Outil de communication",
+        subtitle: "Axiom - Outil de communication",
         text: `
-            Participation au développement d'AXIOM.
+            Participation au développement du back-office d'AXIOM.
             Une application desktop construite avec NW.js permettant de gérer son réseau,
             sécuriser ses échanges et certifier ses documents.
         `,
@@ -324,7 +324,7 @@ const projects = [
             Développement d'un site web pour présenter l'activité artistique de 'Maria la goutte'.
             Développement d'un espace d'administration sur mesure avec Laravel.
         `,
-        technos: [javascript, vue],
+        technos: [javascript],
         category: "pro",
         year: 2017,
         githubLink: null,
@@ -340,7 +340,7 @@ const projects = [
             Réalisation d'un application web vitrine pour présenter les projets de développement du Laboratoire des possibles.
             Progressive web app développée en vue.js avec nuxt et respectant les normes du Material design.
         `,
-        technos: [vue, nuxt, vuetify, sass, firebase, javascript, material, pwa],
+        technos: [vue, nuxt, vuetify, sass, firebase, material, pwa],
         category: "perso",
         year: 2020,
         githubLink: "https://github.com/colinfaivre/LeLaboratoireDesPossibles",
@@ -353,7 +353,7 @@ const projects = [
         text: `
             Réalisation d'un site vitrine pour présenter l'activité de Colin Faivre, un artiste expérimental.
         `,
-        technos: [vue, pwa],
+        technos: [javascript],
         category: "perso",
         year: 2017,
         githubLink: null,
@@ -367,7 +367,7 @@ const projects = [
             Réalisation d'un site vitrine pour présenter le groupe Sourire Panique, un duo banjo / batterie hors du commun.
             Collaboration avec Gaëlle Maas, illustratrice.
         `,
-        technos: [vue, pwa],
+        technos: [javascript],
         category: "perso",
         year: 2017,
         githubLink: null,
@@ -380,7 +380,7 @@ const projects = [
         text: `
             Réalisation d'un site pour l'association Sémaphore. Mise en relation d'artistes avec les services de l'association.
         `,
-        technos: [javascript, vue],
+        technos: [javascript],
         category: "perso",
         year: 2017,
         githubLink: null,
@@ -395,8 +395,6 @@ const projects = [
         text: `
             "Space War" un des premiers jeux vidéo créés au MIT en 1961.
             Accompagné du livre "Introducing avascript game development", j'ai développé une version personnelle.
-            J'ai modifié la taille des astéroides ce qui rend le jeu plutot difficile...
-            Je n'ai pas encore réussi à passer le premier niveau du jeu !
         `,
         technos: [javascript],
         category: "game",
@@ -410,10 +408,10 @@ const projects = [
         title: "Vue.js Tetris",
         subtitle: "Tetris game",
         text: `
-            Au cours d'une formation JS à laquelle j'ai participé, il était demandé de contribuer à un projet sur github.
+            Au cours d'une formation JS, il était demandé de contribuer à un projet sur github.
             J'ai forké un projet de Tetris créé en vue.js et j'ai proposé des améliorations au niveau de l'interface utilisateur.
         `,
-        technos: [vue, javascript, material, pwa],
+        technos: [vue, javascript],
         category: "game",
         year: 2019,
         githubLink: "https://github.com/colinfaivre/vue-tetris",
@@ -425,9 +423,8 @@ const projects = [
         subtitle: "Jeu de casse-brique",
         text: `
             Le traditionnel jeu de casse-brique revisité par Mozilla. Un projet intéressant pour continuer de découvrir l'utilisation de l'élément <canvas>
-            En voici une version personelle sous forme d'application web progressive.
         `,
-        technos: [vue, javascript, material, pwa],
+        technos: [javascript],
         category: "game",
         year: 2020,
         githubLink: "https://github.com/colinfaivre/vue-tetris",
@@ -439,9 +436,9 @@ const projects = [
         subtitle: "Simulation d'ascenseurs",
         text: `
             Une simulation reproduisant la logique d'un immeuble avec des boutons d'appel d'ascenseur à chaque étage
-            et deux ascenseurs. Un devoir réalisé en cours de formation JS pour utiliser la programmation orientée objet.
+            et deux ascenseurs.
         `,
-        technos: [javascript, material],
+        technos: [javascript],
         category: "game",
         year: 2019,
         githubLink: "https://github.com/colinfaivre/VanillaJs-Elevators",
@@ -454,7 +451,7 @@ const projects = [
         title: "Le Gmail de Chuck Norris",
         subtitle: "Un clone de Gmail",
         text: "Réalisation d'un clone de l'application Gmail. La boite mail se remplit de citations de Chuck Norris. Il est possible de placer des emails dans la corbeille ou dans les favoris.",
-        technos: [javascript, material],
+        technos: [vue, javascript, material],
         category: "clone",
         year: 2019,
         githubLink: "https://github.com/colinfaivre/ChuckNorris-gmail",
@@ -465,7 +462,7 @@ const projects = [
         title: "Un clone de Slack",
         subtitle: "Un clone de Slack",
         text: "Réalisation d'un clone de l'application Slack. On peut créer des channels et ajouter des interlocuteurs, personne ne viendra vous déranger ...",
-        technos: [javascript, vue],
+        technos: [vue, javascript],
         category: "clone",
         year: 2019,
         githubLink: "https://github.com/colinfaivre/slack-clone",
