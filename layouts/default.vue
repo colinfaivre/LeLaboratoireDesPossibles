@@ -213,8 +213,8 @@ a {
 
 // Page design
 .page {
-  padding: 20px;
   padding-top: 30px;
+  padding-bottom: 20px;
   max-width: 960px;
   margin: auto;
   color: #1E1E1E;

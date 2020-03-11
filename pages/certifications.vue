@@ -8,7 +8,7 @@
           <v-card
             v-for="certification in certifications"
             :key="certification.index"
-            class="ma-2 pa-3"
+            class="ma-3 pa-3"
             width="900"
             min-width="320"
           >
