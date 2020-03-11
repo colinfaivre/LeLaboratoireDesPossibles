@@ -1,24 +1,34 @@
 <template functionnal>
     <div class="page">
         <h2 class="page-title">
-            {{ pageData.name }}
+            {{ name }}
         </h2>
         <p class="page-description">
-            {{ pageData.description }}
+            {{ description }}
         </p>
         
-        <div v-if="pageData.quote" class="page-quote">
-            {{ pageData.quote }}
+        <div v-if="quote" class="page-quote">
+            {{ quote }}
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        props: [
-            'pageData'
-        ]
+export default {
+    props: {
+        name: {
+            type: String,
+            required: true,
+        },
+        description: {
+            type: String,
+            required: true,
+        },
+        quote: {
+            type: String,
+        }
     }
+}
 </script>
 
 <style lang="scss" scoped>

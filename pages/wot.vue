@@ -1,20 +1,24 @@
 <template>
   <v-container fluid>
 
-    <ProjectsPresentation :pageData="wotProjects.data" />
-    <ProjectCards :projects="wotProjects.list"/>
+    <ProjectPresentation
+      :name="wotProjects.data.name"
+      :description="wotProjects.data.description"
+      :quote="wotProjects.data.quote"
+    />
+    <ProjectList :projects="wotProjects.list"/>
 
   </v-container>
 </template>
 
 <script>
-import ProjectCards from '@/components/ProjectCards'
-import ProjectsPresentation from '@/components/ProjectsPresentation'
+import ProjectList from '@/components/ProjectList'
+import ProjectPresentation from '@/components/ProjectPresentation'
 
 export default {
   components: {
-    ProjectCards,
-    ProjectsPresentation
+    ProjectList,
+    ProjectPresentation
   },
   computed: {
     wotProjects() {
