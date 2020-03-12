@@ -21,8 +21,9 @@ export const actions = {
             response.json().then(data => {
                 context.commit('SET_CERTIFICATIONS', data.certifications)
             })
-        }).catch(err => {
-            console.log('Fetch Error :-S', err);
+        })
+        .catch(err => {
+            console.log('Fetch Error', err);
         })
     }
 }
