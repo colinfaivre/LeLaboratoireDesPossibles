@@ -183,7 +183,7 @@ import TheFooter from '@/components/TheFooter'
           return 'Accueil'
         }
       }
-    }
+    },
   }
 </script>
 

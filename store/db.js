@@ -518,62 +518,8 @@ const projects = [
     // },
 ]
 
-const certifications = [
-    {
-        image: "mobileWebSpecialist.png",
-        title: "Mobile Web Specialist",
-        subtitle: "subtitle",
-        text: "Content text",
-        year: "En cours",
-        certifLink: null,
-        webLink: "https://developers.google.com/certification/mobile-web-specialist",
-        authorityImage: "googleDevelopers.png",
-    },
-    {
-        image: "nuxt.png",
-        title: "Nuxt.js",
-        subtitle: "subtitle",
-        text: "Content text",
-        year: "En cours",
-        certifLink: null,
-        webLink: "https://www.udemy.com/course/nuxtjs-vuejs-on-steroids/",
-        authorityImage: "udemy.png",
-    },
-    {
-        image: "es6.png",
-        title: "ES6 Certification",
-        subtitle: "subtitle",
-        text: "Content text",
-        year: "2019",
-        certifLink: "https://www.credential.net/b9e5cf43-c3d5-4ea4-82bc-86bec1ec56e6",
-        webLink: "https://pirple.thinkific.com/courses/keeping-up-with-the-javascripts-part-1",
-        authorityImage: "pirple.png",
-    },
-    {
-        image: "calarts.jpg",
-        title: "UI / UX Design",
-        subtitle: "subtitle",
-        text: "Content text",
-        year: "2018",
-        certifLink: "https://coursera.org/share/462fe0e0375851c4ac9d62fd6d9ff75e",
-        webLink: "https://www.coursera.org/specializations/ui-ux-design",
-        authorityImage: "coursera.png",
-    },
-    {
-        image: "firebase.png",
-        title: "Vue JS & Firebase",
-        subtitle: "subtitle",
-        text: "Content text",
-        year: "2018",
-        certifLink: "https://www.udemy.com/certificate/UC-E70UY4AK/",
-        webLink: "https://www.udemy.com/course/build-web-apps-with-vuejs-firebase/",
-        authorityImage: "udemy.png",
-    },
-]
-
 export const db = {
     projects,
     categories,
     technos,
-    certifications,
 }

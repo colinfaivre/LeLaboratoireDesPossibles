@@ -76,6 +76,9 @@ export default {
     certifications() {
       return this.$store.getters['certifications/certifications']
     }
+  },
+  created() {
+    this.$store.dispatch('certifications/fetchCertifications')
   }
 }
 </script>
