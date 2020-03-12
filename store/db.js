@@ -98,7 +98,7 @@ const categories = [
         name: "Projets professionnels",
         description: `
             Des applications web, back-offices et sites vitrines développés pour le compte d'agences web, startups et particuliers.
-            Les principales technologies utilisées sont vue.js, nuxt et vuetify pour créer des applications web progressives respectant les normes du Material Design.
+            Les principales technologies utilisées sont vue.js, nuxt et vuetify pour créer des applications web progressives respectant les normes du material design.
         `
     },
     {
@@ -158,7 +158,7 @@ const categories = [
 const projects = [
     // Projets pros
     {
-        screenshot: "psycho.png",
+        screenshot: "psycho.jpg",
         title: "jeanyvesgauthier.com",
         subtitle: "Site vitrine - Psychanalyste",
         text: `
@@ -223,7 +223,7 @@ const projects = [
         subtitle: "Novaccess - Ouverture de portails",
         text: `
             Développement du back-office d'une application permettant d'ouvrir des portes de parkings privés.
-            Gestion des utilisateurs, de leurs droits et abonnements
+            Gestion des utilisateurs, de leurs droits et abonnements.
         `,
         technos: [vue, typescript, buefy, sass],
         category: "pro",
@@ -247,7 +247,7 @@ const projects = [
         text: `
             Participation au développement du back-office de Glifter.
             Agrégateur de sources d’informations pour produire et partager des articles.
-            Outil d'édition d'article se rapprochant de celui de l'application Medium
+            Outil d'édition d'article se rapprochant de celui de l'application Medium.
         `,
         technos: [javascript, vue, sass],
         category: "pro",
@@ -321,7 +321,7 @@ const projects = [
         title: "Maria la goutte",
         subtitle: "Site vitrine - Artiste",
         text: `
-            Développement d'un site web pour présenter l'activité artistique de 'Maria la goutte'.
+            Développement d'un site web pour présenter l'activité artistique de "Maria la goutte".
             Développement d'un espace d'administration sur mesure avec Laravel.
         `,
         technos: [javascript],
@@ -333,7 +333,7 @@ const projects = [
     
     // Projets persos
     {
-        screenshot: "lelaboratoiredespossibles.jpeg",
+        screenshot: "labo.jpg",
         title: "Le laboratoire des possibles",
         subtitle: "Site vitrine - Developpeur",
         text: `
