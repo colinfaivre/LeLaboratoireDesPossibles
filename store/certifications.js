@@ -17,13 +17,18 @@ export const mutations = {
 export const actions = {
     fetchCertifications(context) {
         fetch('/db.json')
-        .then(response => {
-            response.json().then(data => {
-                context.commit('SET_CERTIFICATIONS', data.certifications)
-            })
-        })
-        .catch(err => {
-            console.log('Fetch Error', err);
-        })
+        .then(response => response.json())
+        .then(data => context.commit('SET_CERTIFICATIONS', data.certifications))
+        .catch(err => console.log('Fetch Error', err))
+
+        // fetch('/db.json')
+        // .then(response => {
+        //     response.json().then(data => {
+        //         context.commit('SET_CERTIFICATIONS', data.certifications)
+        //     })
+        // })
+        // .catch(err => {
+        //     console.log('Fetch Error', err);
+        // })
     }
 }

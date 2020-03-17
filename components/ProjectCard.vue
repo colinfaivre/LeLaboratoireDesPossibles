@@ -35,9 +35,14 @@
                     <strong>{{ customer.type }}</strong>
                     <span>{{ customer.location }}</span>
                     <br/> 
-                    <span v-if="customer.duration === 1">Mission d' </span>
-                    <span v-else>Mission de </span>
-                    {{ customer.duration }} mois
+                    <div v-if="customer.duration">
+                        <span v-if="customer.duration === 1">Mission d' </span>
+                        <span v-else>Mission de </span>
+                        {{ customer.duration }} mois
+                    </div>
+                    <div v-else>
+                        <span>Personnel</span>
+                    </div>
                 </div>
             </div>
         </div>

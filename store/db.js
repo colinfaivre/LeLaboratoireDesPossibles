@@ -38,6 +38,14 @@ const buefy = {
     name: "buefy",
     url: "https://buefy.org/documentation/dropdown/",
 }
+const node = {
+    name: "node",
+    url: "https://nodejs.org/en/",
+}
+const laravel = {
+    name: "laravel",
+    url: "https://laravel.com/",
+}
 
 const technos = {
     vue: {
@@ -170,6 +178,14 @@ const projects = [
         year: 2020,
         githubLink: null,
         webLink: "http://jeanyves-gauthier-psychanalyste.com",
+        customer: {
+            type: "Jean-Yves Gauthier",
+            location: "Limoges",
+            duration: 1,
+            logo: "jeanyves.png",
+            color: "#303131",
+            colorLight: "#494b4b",
+        }
     },
     {
         screenshot: "sapiendo.png",
@@ -296,11 +312,19 @@ const projects = [
             Réalisation d'une application web vitrine en vue.js pour présenter les boutiques d'un opticien.
             Espace d'administration de contenus réalisé avec express.js.
         `,
-        technos: [javascript, vue],
+        technos: [javascript, vue, node],
         category: "pro",
         year: 2018,
         githubLink: null,
         webLink: "http://optiquebeaubreuil.com/",
+        customer: {
+            type: "Optique Beaubreuil",
+            location: "Limoges",
+            duration: 1,
+            logo: "optique-beaubreuil.png",
+            color: "#12232e",
+            colorLight: "#214054",
+        }
     },
     {
         screenshot: "optiqueduhameau.png",
@@ -310,11 +334,19 @@ const projects = [
             Réalisation d'une application web vitrine en vue.js pour présenter les boutiques d'un opticien.
             Espace d'administration de contenus réalisé avec express.js.
         `,
-        technos: [javascript, vue],
+        technos: [javascript, vue, node],
         category: "pro",
         year: 2018,
         githubLink: null,
         webLink: "http://optiqueduhameau.com/",
+        customer: {
+            type: "Optique du hameau",
+            location: "Limoges",
+            duration: 1,
+            logo: "optique-du-hameau.png",
+            color: "#221b17",
+            colorLight: "#40332b",
+        }
     },
     {
         screenshot: "marialagoutte.png",
@@ -324,11 +356,19 @@ const projects = [
             Développement d'un site web pour présenter l'activité artistique de "Maria la goutte".
             Développement d'un espace d'administration sur mesure avec Laravel.
         `,
-        technos: [javascript],
+        technos: [javascript, laravel],
         category: "pro",
         year: 2017,
         githubLink: null,
         webLink: null,
+        customer: {
+            type: "Maria la goutte",
+            location: "Limoges",
+            duration: 1,
+            logo: "marialagoutte.png",
+            color: "#404040",
+            colorLight: "#464646",
+        }
     },
     
     // Projets persos
@@ -345,6 +385,12 @@ const projects = [
         year: 2020,
         githubLink: "https://github.com/colinfaivre/LeLaboratoireDesPossibles",
         webLink: "https://lelaboratoiredespossibles.com",
+        customer: {
+            type: "Le laboratoire des possibles",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
     {
         screenshot: "colinfaivre.jpeg",
@@ -358,6 +404,12 @@ const projects = [
         year: 2017,
         githubLink: null,
         webLink: "https://colinfaivre.com",
+        customer: {
+            type: "colinfaivre.com",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
     {
         screenshot: "sourirepanique.jpeg",
@@ -372,6 +424,12 @@ const projects = [
         year: 2017,
         githubLink: null,
         webLink: "https://sourirepanique.com",
+        customer: {
+            type: "sourirepanique.com",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
     {
         screenshot: "semaphore.jpeg",
@@ -385,6 +443,12 @@ const projects = [
         year: 2017,
         githubLink: null,
         webLink: null,
+        customer: {
+            type: "semaphore.com",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
 
     // Games
@@ -402,6 +466,12 @@ const projects = [
         githubLink: null,
         webLink: null,
         bookLink: "https://www.apress.com/gp/book/9781484232514",
+        customer: {
+            type: "Vanilla JS Asteroid",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
     {
         screenshot: "tetris.png",
@@ -416,6 +486,12 @@ const projects = [
         year: 2019,
         githubLink: "https://github.com/colinfaivre/vue-tetris",
         webLink: null,
+        customer: {
+            type: "Tetris en vue.js",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
     {
         screenshot: "breakout.png",
@@ -429,6 +505,12 @@ const projects = [
         year: 2020,
         githubLink: "https://github.com/colinfaivre/vue-tetris",
         webLink: null,
+        customer: {
+            type: "Casse-brique",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
     {
         screenshot: "elevator.png",
@@ -443,6 +525,12 @@ const projects = [
         year: 2019,
         githubLink: "https://github.com/colinfaivre/VanillaJs-Elevators",
         webLink: null,
+        customer: {
+            type: "Simulation d'ascenceurs",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
 
     // Clones
@@ -456,6 +544,12 @@ const projects = [
         year: 2019,
         githubLink: "https://github.com/colinfaivre/ChuckNorris-gmail",
         webLink: null,
+        customer: {
+            type: "Le Gmail de Chuck Norris",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
     {
         screenshot: "slackclone.png",
@@ -467,6 +561,12 @@ const projects = [
         year: 2019,
         githubLink: "https://github.com/colinfaivre/slack-clone",
         webLink: "https://slack-clone-db2d2.web.app/create-channel",
+        customer: {
+            type: "Un clone de Slack",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
 
     // Augemented reality
@@ -480,6 +580,12 @@ const projects = [
         year: 2020,
         githubLink: null,
         webLink: null,
+        customer: {
+            type: "Le laboratoire des possibles",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
     {
         screenshot: "aframe.png",
@@ -491,6 +597,12 @@ const projects = [
         year: 2020,
         githubLink: null,
         webLink: null,
+        customer: {
+            type: "Le laboratoire des possibles",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
     },
 
     // Web of things
@@ -504,6 +616,12 @@ const projects = [
     //     year: 2019,
     //     githubLink: null,
     //     webLink: null,
+    // customer: {
+    //     type: "Le laboratoire des possibles",
+    //     logo: "labo.png",
+    //     color: "#1E1E1E",
+    //     colorLight: "#383838",
+    // }
     // },
     // {
     //     screenshot: "wot.png",
@@ -515,6 +633,12 @@ const projects = [
     //     year: 2019,
     //     githubLink: null,
     //     webLink: null,
+    // customer: {
+    //     type: "Le laboratoire des possibles",
+    //     logo: "labo.png",
+    //     color: "#1E1E1E",
+    //     colorLight: "#383838",
+    // }
     // },
 ]
 
