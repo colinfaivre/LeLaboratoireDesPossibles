@@ -105,26 +105,21 @@ const categories = [
         id: "pro",
         name: "Projets professionnels",
         description: `
-            Des applications web, back-offices et sites vitrines développés pour le compte d'agences web, startups et particuliers.
-            Les principales technologies utilisées sont vue.js, nuxt et vuetify pour créer des applications web progressives respectant les normes du material design.
+            Je travaille au développement d'applications web, back-offices et sites vitrines pour le compte d'agences web, startups et particuliers. Les principales technologies utilisées sont vue.js, nuxt et vuetify pour créer des applications web progressives respectant les normes du material design.
         `
     },
     {
         id: "perso",
         name: "Projets personnels",
         description: `
-            Les projets personnels qui me tiennent à coeur.
-            Parti d'un besoin immense de donner la première place à mes projets artistiques "Colin Faivre" et "Sourire Panique"
-            autant qu'à l'association "Sémaphore" qui m'a offert un soutien inconditionnel. J'ai appris sur le tas à développer
-            des sites webs avec la passion de donner vie à ces projets.     
+            J'ai appris en autodidacte à développer des sites web avec l'envie de donner vie à mes projets artistiques Colin Faivre et Sourire Panique autant qu'à l'association Sémaphore qui m'a offert un soutien inconditionnel.     
         `
     },
     {
         id: "game",
         name: "Jeux",
         description: `
-            Le laboratoire des possibles, c'est aussi retrouver le plaisir simple de recréer les jeux d'arcade de mon enfance.
-            C'est un terrain de jeu sans pareil pour continuer d'apprendre le métier.
+            Le laboratoire des possibles, c'est aussi le plaisir simple de recréer les jeux d'arcade de mon enfance. C'est un moyen sans pareil de continuer d'apprendre le métier.
         `,
         quote: `
             "Below the surface of the machine, the program moves. 
@@ -215,8 +210,7 @@ const projects = [
         title: "Barnaby",
         subtitle: "Barnaby - Commande de boissons",
         text: `
-            Création d'un application web pour permettre à l'utilisateur de commander ses boissons
-            depuis sa table en scannant un QR code.
+            Création d'un application web pour permettre à l'utilisateur de commander ses boissons depuis sa table en scannant un QR code avec son smartphone.
         `,
         technos: [vue, nuxt, sass],
         category: "pro",
@@ -238,8 +232,7 @@ const projects = [
         title: "Novaccess",
         subtitle: "Novaccess - Ouverture de portails",
         text: `
-            Développement du back-office d'une application permettant d'ouvrir des portes de parkings privés.
-            Gestion des utilisateurs, de leurs droits et abonnements.
+            Développement du back-office d'une application permettant d'ouvrir les portes de parkings privés. Gestion des utilisateurs, de leurs droits et abonnements.
         `,
         technos: [vue, typescript, buefy, sass],
         category: "pro",
@@ -261,9 +254,7 @@ const projects = [
         title: "Glifter",
         subtitle: "Glifter - Gestion d'articles",
         text: `
-            Participation au développement du back-office de Glifter.
-            Agrégateur de sources d’informations pour produire et partager des articles.
-            Outil d'édition d'article se rapprochant de celui de l'application Medium.
+            Participation au développement du back-office de Glifter. Agrégateur de sources d’informations pour produire et partager des articles. Outil d'édition d'articles se rapprochant de celui de l'application Medium.
         `,
         technos: [javascript, vue, sass],
         category: "pro",
@@ -353,8 +344,7 @@ const projects = [
         title: "Maria la goutte",
         subtitle: "Site vitrine - Artiste",
         text: `
-            Développement d'un site web pour présenter l'activité artistique de "Maria la goutte".
-            Développement d'un espace d'administration sur mesure avec Laravel.
+            Développement d'un site web pour présenter l'activité artistique de Maria la goutte. Développement d'un espace d'administration sur mesure avec Laravel.
         `,
         technos: [javascript, laravel],
         category: "pro",
@@ -457,8 +447,7 @@ const projects = [
         title: "Vanilla JS Asteroid",
         subtitle: "Arcade game",
         text: `
-            "Space War" un des premiers jeux vidéo créés au MIT en 1961.
-            Accompagné du livre "Introducing avascript game development", j'ai développé une version personnelle.
+            "Space War" est l'un des premiers jeux vidéo créés au MIT en 1961. Accompagné du livre "Introducing avascript game development", j'en ai développé une version personnelle.
         `,
         technos: [javascript],
         category: "game",
