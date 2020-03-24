@@ -46,6 +46,10 @@ const laravel = {
     name: "laravel",
     url: "https://laravel.com/",
 }
+const htmlCss = {
+    name: "htmlCss",
+    url: "https://developer.mozilla.org/fr/docs/Web/HTML"
+}
 
 const technos = {
     vue: {
@@ -121,13 +125,13 @@ const categories = [
         description: `
             Le laboratoire des possibles, c'est aussi le plaisir simple de recréer les jeux d'arcade de mon enfance. C'est un moyen sans pareil de continuer d'apprendre le métier.
         `,
-        quote: `
-            "Below the surface of the machine, the program moves. 
-            Without effort, it expands and contracts.
-            In great harmony, electrons scatter and regroup.
-            The forms on the monitor are but ripples on the water.
-            The essence stays invisibly below." — Master Yuan-Ma, The Book of Programming
-        `,
+        // quote: `
+        //     "Below the surface of the machine, the program moves. 
+        //     Without effort, it expands and contracts.
+        //     In great harmony, electrons scatter and regroup.
+        //     The forms on the monitor are but ripples on the water.
+        //     The essence stays invisibly below." — Master Yuan-Ma, The Book of Programming
+        // `,
     },
     {
         id: "clone",
@@ -136,9 +140,9 @@ const categories = [
             Que serait un laboratoire sans ses expériences dangereuses et controversées ?
             Cette pièce du laboratoire se consacre entièrement à la reproduction plus ou moins fidèle d'applications bien connues.
         `,
-        quote: `
-            "Se tenir sur les épaules des géants et voir plus loin ... Voir dans l'invisible, à travers l'espace et le temps." - Jean-Claude Ameisen
-        `
+        // quote: `
+        //     "Se tenir sur les épaules des géants et voir plus loin ... Voir dans l'invisible, à travers l'espace et le temps." - Jean-Claude Ameisen
+        // `
     },
     {
         id: "ar",
@@ -346,7 +350,7 @@ const projects = [
         text: `
             Développement d'un site web pour présenter l'activité artistique de Maria la goutte. Développement d'un espace d'administration sur mesure avec Laravel.
         `,
-        technos: [javascript, laravel],
+        technos: [javascript, htmlCss, laravel],
         category: "pro",
         year: 2017,
         githubLink: null,
@@ -370,7 +374,7 @@ const projects = [
             Réalisation d'un application web vitrine pour présenter les projets de développement du Laboratoire des possibles.
             Progressive web app développée en vue.js avec nuxt et respectant les normes du Material design.
         `,
-        technos: [vue, nuxt, vuetify, sass, firebase, material, pwa],
+        technos: [vue, nuxt, vuetify, sass, firebase, pwa],
         category: "perso",
         year: 2020,
         githubLink: "https://github.com/colinfaivre/LeLaboratoireDesPossibles",
@@ -389,7 +393,7 @@ const projects = [
         text: `
             Réalisation d'un site vitrine pour présenter l'activité de Colin Faivre, un artiste expérimental.
         `,
-        technos: [javascript],
+        technos: [javascript, htmlCss],
         category: "perso",
         year: 2017,
         githubLink: null,
@@ -409,7 +413,7 @@ const projects = [
             Réalisation d'un site vitrine pour présenter le groupe Sourire Panique, un duo banjo / batterie hors du commun.
             Collaboration avec Gaëlle Maas, illustratrice.
         `,
-        technos: [javascript],
+        technos: [javascript, htmlCss],
         category: "perso",
         year: 2017,
         githubLink: null,
@@ -428,7 +432,7 @@ const projects = [
         text: `
             Réalisation d'un site pour l'association Sémaphore. Mise en relation d'artistes avec les services de l'association.
         `,
-        technos: [javascript],
+        technos: [javascript, htmlCss],
         category: "perso",
         year: 2017,
         githubLink: null,
@@ -449,7 +453,7 @@ const projects = [
         text: `
             "Space War" est l'un des premiers jeux vidéo créés au MIT en 1961. Accompagné du livre "Introducing avascript game development", j'en ai développé une version personnelle.
         `,
-        technos: [javascript],
+        technos: [javascript, htmlCss],
         category: "game",
         year: 2019,
         githubLink: null,
@@ -482,25 +486,25 @@ const projects = [
             colorLight: "#383838",
         }
     },
-    {
-        screenshot: "breakout.png",
-        title: "Breakout",
-        subtitle: "Jeu de casse-brique",
-        text: `
-            Le traditionnel jeu de casse-brique revisité par Mozilla. Un projet intéressant pour continuer de découvrir l'utilisation de l'élément <canvas>
-        `,
-        technos: [javascript],
-        category: "game",
-        year: 2020,
-        githubLink: "https://github.com/colinfaivre/vue-tetris",
-        webLink: null,
-        customer: {
-            type: "Casse-brique",
-            logo: "labo.png",
-            color: "#1E1E1E",
-            colorLight: "#383838",
-        }
-    },
+    // {
+    //     screenshot: "breakout.png",
+    //     title: "Breakout",
+    //     subtitle: "Jeu de casse-brique",
+    //     text: `
+    //         Le traditionnel jeu de casse-brique revisité par Mozilla. Un projet intéressant pour continuer de découvrir l'utilisation de l'élément <canvas>
+    //     `,
+    //     technos: [javascript],
+    //     category: "game",
+    //     year: 2020,
+    //     githubLink: "https://github.com/colinfaivre/vue-tetris",
+    //     webLink: null,
+    //     customer: {
+    //         type: "Casse-brique",
+    //         logo: "labo.png",
+    //         color: "#1E1E1E",
+    //         colorLight: "#383838",
+    //     }
+    // },
     {
         screenshot: "elevator.png",
         title: "Vanilla JS - Elevators",
@@ -509,7 +513,7 @@ const projects = [
             Une simulation reproduisant la logique d'un immeuble avec des boutons d'appel d'ascenseur à chaque étage
             et deux ascenseurs.
         `,
-        technos: [javascript],
+        technos: [javascript, htmlCss],
         category: "game",
         year: 2019,
         githubLink: "https://github.com/colinfaivre/VanillaJs-Elevators",
@@ -564,7 +568,7 @@ const projects = [
         title: "GIF augmenté",
         subtitle: "Un projet pour tester ar.js et le framemork 3D A-frame",
         text: "Une application pour placer un GIF en réalité augmenté sur un marqueur préalablement imprimé sur une feuille de papier. Simple et efficace pour refaire la déco du bureau !",
-        technos: [javascript],
+        technos: [javascript, htmlCss],
         category: "ar",
         year: 2020,
         githubLink: null,
@@ -581,7 +585,7 @@ const projects = [
         title: "Montgolfière augmentée",
         subtitle: "Un projet pour tester A-frame",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        technos: [javascript],
+        technos: [javascript, htmlCss],
         category: "ar",
         year: 2020,
         githubLink: null,

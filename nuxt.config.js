@@ -11,7 +11,7 @@ export default {
 
       // Google Search
       { hid: 'description', name: 'description', content: 'Votre application web développée en Vue.js' },
-      { hid: 'keywords', name: 'keywords', content: 'le laboratoire des possibles, création, site internet, site web, web designer, développeur web, application web, vue.js' },
+      { hid: 'keywords', name: 'keywords', content: 'le laboratoire des possibles, colin faivre, mobile web specialist, application web, application mobile, back-office, site web, site internet, pwa, progressive web app, application web progressive, développeur vue, développeur nuxt, dev vue, dev nuxt, freelance vue, freelance nuxt, vue.js, javascript, js, nuxt.js, nuxt, front-end, front, développeur vue.js limoges, développeur nuxt.js limoges, à distance, remote' },
       // OpengGraph image (social media sharable)
       { property: 'og:image', content: '/og-image.png' },
       { property: 'og:image:width', content: '1051' },
