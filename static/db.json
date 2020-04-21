@@ -5,8 +5,8 @@
         "title": "Mobile Web Specialist",
         "subtitle": "subtitle",
         "text": "Content text",
-        "year": "En cours",
-        "certifLink": null,
+        "year": "2020",
+        "certifLink": "https://developers.google.com/certification/mobile-web-specialist",
         "webLink": "https://developers.google.com/certification/mobile-web-specialist",
         "authorityImage": "googleDevelopers.png"
         },
