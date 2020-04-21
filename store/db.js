@@ -528,6 +528,23 @@ const projects = [
 
     // Clones
     {
+        screenshot: "trelloclone.png",
+        title: "Un clone de Trello",
+        subtitle: "Un clone de Trello",
+        text: "Réalisation d'un clone de l'application Trello. Création de tableaux, listes et cartes. Utilisation de l'API Drag and Drop. FireStore est utilisé pour stocker les données.",
+        technos: [vue, javascript, firebase],
+        category: "clone",
+        year: 2020,
+        githubLink: null,
+        webLink: null,
+        customer: {
+            type: "Clone de Trello",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
+    },
+    {
         screenshot: "gmailclone.png",
         title: "Le Gmail de Chuck Norris",
         subtitle: "Un clone de Gmail",
@@ -538,7 +555,7 @@ const projects = [
         githubLink: "https://github.com/colinfaivre/ChuckNorris-gmail",
         webLink: null,
         customer: {
-            type: "Le Gmail de Chuck Norris",
+            type: "Clone de Gmail",
             logo: "labo.png",
             color: "#1E1E1E",
             colorLight: "#383838",
@@ -555,7 +572,7 @@ const projects = [
         githubLink: "https://github.com/colinfaivre/slack-clone",
         webLink: "https://slack-clone-db2d2.web.app/create-channel",
         customer: {
-            type: "Un clone de Slack",
+            type: "Clone de Slack",
             logo: "labo.png",
             color: "#1E1E1E",
             colorLight: "#383838",
