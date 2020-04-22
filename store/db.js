@@ -123,26 +123,17 @@ const categories = [
         id: "game",
         name: "Jeux",
         description: `
-            Le laboratoire des possibles, c'est aussi le plaisir simple de recréer les jeux d'arcade de mon enfance. C'est un moyen sans pareil de continuer d'apprendre le métier.
+            Développer pour le plaisir de créer, donner vie aux jeux qui ont accompagné mon enfance.
+            Un moyen sans pareil pour continuer d'apprendre le métier.
         `,
-        // quote: `
-        //     "Below the surface of the machine, the program moves. 
-        //     Without effort, it expands and contracts.
-        //     In great harmony, electrons scatter and regroup.
-        //     The forms on the monitor are but ripples on the water.
-        //     The essence stays invisibly below." — Master Yuan-Ma, The Book of Programming
-        // `,
     },
     {
         id: "clone",
         name: "Clones",
         description: `
-            Que serait un laboratoire sans ses expériences dangereuses et controversées ?
-            Cette pièce du laboratoire se consacre entièrement à la reproduction plus ou moins fidèle d'applications bien connues.
+            J'ai une passion secrète pour la reproduction d'applications bien connues.
+            Pour continuer d'apprendre et me lancer des défis techniques.
         `,
-        // quote: `
-        //     "Se tenir sur les épaules des géants et voir plus loin ... Voir dans l'invisible, à travers l'espace et le temps." - Jean-Claude Ameisen
-        // `
     },
     {
         id: "ar",
@@ -538,7 +529,7 @@ const projects = [
         githubLink: null,
         webLink: null,
         customer: {
-            type: "Clone de Trello",
+            type: "Tableaux",
             logo: "labo.png",
             color: "#1E1E1E",
             colorLight: "#383838",
