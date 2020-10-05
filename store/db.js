@@ -116,7 +116,7 @@ const categories = [
         id: "perso",
         name: "Projets personnels",
         description: `
-            J'ai appris en autodidacte à développer des sites web avec l'envie de donner vie à mes projets artistiques Colin Faivre et Sourire Panique autant qu'à l'association Sémaphore qui m'a offert un soutien inconditionnel.     
+            J'ai appris en autodidacte à développer des sites web avec l'envie de donner vie à mes projets artistiques Colin Faivre et Sourire Panique autant qu'à l'association Sémaphore qui m'a offert un soutien inconditionnel.
         `
     },
     {
@@ -155,6 +155,28 @@ const categories = [
 
 const projects = [
     // Projets pros
+    {
+        screenshot: "vetolib.png",
+        title: "vetolib.fr",
+        subtitle: "Application web - Prise de rdv",
+        text: `
+            Participation au développement du front de https://vetolib.fr et de son back-office.
+            Une application web de prise de rendez-vous coté client et de gestion d'agenda côté vétérinaire.
+        `,
+        technos: [vue, vuetify, sass, typescript],
+        category: "pro",
+        year: 2020,
+        githubLink: null,
+        webLink: "http://vetolib.fr",
+        customer: {
+            type: "Vetolib",
+            location: "Paris",
+            duration: 4,
+            logo: "vetolib.png",
+            color: "#12204B",
+            colorLight: "#24366C",
+        }
+    },
     {
         screenshot: "psycho.jpg",
         title: "jeanyvesgauthier.com",
@@ -355,7 +377,7 @@ const projects = [
             colorLight: "#464646",
         }
     },
-    
+
     // Projets persos
     {
         screenshot: "labo.jpg",

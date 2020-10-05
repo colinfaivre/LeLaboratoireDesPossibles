@@ -133,6 +133,11 @@ import TheFooter from '@/components/TheFooter'
           name: "Projets professionels",
         },
         {
+          link: "/certifications",
+          icon: "mdi-certificate",
+          name: "Certification Google",
+        },
+        {
           link: "/perso",
           icon: "mdi-palette",
           name: "Projets personnels",
@@ -162,11 +167,6 @@ import TheFooter from '@/components/TheFooter'
         //   icon: "mdi-chip",
         //   name: "Technologies utilisées",
         // },
-        {
-          link: "/certifications",
-          icon: "mdi-school",
-          name: "Certifications",
-        },
         {
           link: "/legal",
           icon: "mdi-bank",
