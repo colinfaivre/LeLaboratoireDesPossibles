@@ -50,6 +50,10 @@ const htmlCss = {
     name: "htmlCss",
     url: "https://developer.mozilla.org/fr/docs/Web/HTML"
 }
+const webAssembly = {
+    name: "webAssembly",
+    url: "https://webassembly.org/",
+}
 
 const technos = {
     vue: {
@@ -460,6 +464,25 @@ const projects = [
 
     // Games
     {
+        screenshot: "vue-chess.png",
+        title: "Vue chess",
+        subtitle: "Jeu d'échec",
+        text: `
+            Réalisation d'une application de jeu d'échec utilisant la librairie stockfish.js en webassembly.
+        `,
+        technos: [vue, webAssembly, vuetify, typescript],
+        category: "game",
+        year: 2020,
+        githubLink: "https://github.com/colinfaivre/vue-chess",
+        webLink: null,
+        customer: {
+            type: "Vue chess",
+            logo: "labo.png",
+            color: "#1E1E1E",
+            colorLight: "#383838",
+        }
+    },
+    {
         screenshot: "asteroid.png",
         title: "Vanilla JS Asteroid",
         subtitle: "Arcade game",
@@ -499,25 +522,6 @@ const projects = [
             colorLight: "#383838",
         }
     },
-    // {
-    //     screenshot: "breakout.png",
-    //     title: "Breakout",
-    //     subtitle: "Jeu de casse-brique",
-    //     text: `
-    //         Le traditionnel jeu de casse-brique revisité par Mozilla. Un projet intéressant pour continuer de découvrir l'utilisation de l'élément <canvas>
-    //     `,
-    //     technos: [javascript],
-    //     category: "game",
-    //     year: 2020,
-    //     githubLink: "https://github.com/colinfaivre/vue-tetris",
-    //     webLink: null,
-    //     customer: {
-    //         type: "Casse-brique",
-    //         logo: "labo.png",
-    //         color: "#1E1E1E",
-    //         colorLight: "#383838",
-    //     }
-    // },
     {
         screenshot: "elevator.png",
         title: "Vanilla JS - Elevators",
@@ -592,7 +596,7 @@ const projects = [
         }
     },
 
-    // Augemented reality
+    // Augmented reality
     {
         screenshot: "aframe.png",
         title: "GIF augmenté",

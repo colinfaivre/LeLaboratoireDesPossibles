@@ -1,5 +1,5 @@
 <template functionnal>
-    <v-card 
+    <v-card
         class="ma-3"
         width="450"
         min-width="320"
@@ -19,7 +19,7 @@
         </v-card-title>
 
         <div
-            v-if="customer" 
+            v-if="customer"
             class="px-4 py-2 customer"
             :style="{backgroundColor: customer.colorLight}"
         >
@@ -34,14 +34,14 @@
                 <div class="customer-description ml-4">
                     <strong>{{ customer.type }}</strong>
                     <span>{{ customer.location }}</span>
-                    <br/> 
+                    <br/>
                     <div v-if="customer.duration">
                         <span v-if="customer.duration === 1">Mission d' </span>
                         <span v-else>Mission de </span>
                         {{ customer.duration }} mois
                     </div>
                     <div v-else>
-                        <span>Personnel</span>
+                        <span>{{ categoryName }}</span>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 :href="webLink"
                 target="_blank"
                 rel="noopener noreferrer"
-                fab 
+                fab
                 :style="{backgroundColor: customer ? customer.color : '#1E1E1E'}"
             >
                 <v-icon color="secondary">mdi-arrow-right</v-icon>
@@ -73,13 +73,13 @@
                 :href="bookLink"
                 target="_blank"
                 rel="noopener noreferrer"
-                fab 
+                fab
                 :style="{backgroundColor: customer ? customer.color : '#1E1E1E'}"
             >
                 <v-icon color="secondary">mdi-book-open-page-variant</v-icon>
             </v-btn>
         </div>
-        
+
         <v-card-text>
             <div class="text--primary">
                 {{ subtitle }}
@@ -149,6 +149,24 @@
                 type: Number,
                 required: true
             },
+            category: {
+                type: String,
+                required: true
+            },
+        },
+
+        computed: {
+            categoryName: function() {
+                if (this.category === 'game') {
+                    return 'Jeu';
+                }
+                if (this.category === 'perso') {
+                    return 'Personnel';
+                }
+                if (this.category === 'clone') {
+                    return 'Clone';
+                }
+            }
         }
     }
 </script>

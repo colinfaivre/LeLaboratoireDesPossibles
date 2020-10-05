@@ -14,8 +14,9 @@
             :text="project.text"
             :technos="project.technos"
             :year="project.year"
+            :category="project.category"
         />
-            
+
     </v-row>
 </template>
 
