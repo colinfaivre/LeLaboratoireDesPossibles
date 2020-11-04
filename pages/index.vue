@@ -47,6 +47,7 @@
             <p class="presentation-text">
                 Développeur front-end en freelance depuis 2017.
                 Je travaille essentiellement à distance sur vos projets d'applications web.
+                J'ai obtenu une certification de la part de Google qui valide mes compétences concernant le web mobile et je mentore les étudiants de la formation "Développeur web" sur openclassromms 
             </p>
             <nuxt-link class="nav-item" to="/pro">
                 <div class="icon-container">
@@ -72,6 +73,20 @@
                     </div>
                     <div class="sub-title">
                         Mobile Web Specialist
+                    </div>
+                </div>
+            </nuxt-link>
+
+            <nuxt-link class="nav-item" to="/certifications">
+                <div class="icon-container">
+                    <v-icon color="secondary">mdi-school</v-icon>
+                </div>
+                <div class="text-container">
+                    <div class="nav-title">
+                        Mentorat
+                    </div>
+                    <div class="sub-title">
+                        Openclassrooms
                     </div>
                 </div>
             </nuxt-link>

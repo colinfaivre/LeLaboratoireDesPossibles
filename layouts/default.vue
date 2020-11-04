@@ -138,6 +138,11 @@ import TheFooter from '@/components/TheFooter'
           name: "Certification Google",
         },
         {
+          link: "/mentorat",
+          icon: "mdi-school",
+          name: "Mentorat",
+        },
+        {
           link: "/perso",
           icon: "mdi-palette",
           name: "Projets personnels",
