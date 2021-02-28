@@ -23,3 +23,13 @@ $ npm run generate
 ```
 
 This app is build with Nuxt, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Deploy
+
+``` bash
+# generate static project
+$ npm run generate
+
+# deploy to firebase hosting
+$ firebase deploy
+```
