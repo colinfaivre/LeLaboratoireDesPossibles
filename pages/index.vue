@@ -47,7 +47,11 @@
             <p class="presentation-text">
                 Développeur front-end en freelance depuis 2017.
                 Je travaille essentiellement à distance sur vos projets d'applications web.
-                J'ai obtenu une certification de la part de Google qui valide mes compétences concernant le web mobile et je mentore les étudiants de la formation "Développeur web" sur openclassrooms
+                J'ai obtenu une certification de la part de Google qui valide mes compétences concernant le web mobile.
+                Je mentore les étudiants de la formation "Développeur web" sur
+                <a href="https://openclassrooms.com/fr/paths/185-developpeur-web" target="_blank" rel="noopener noreferrer"><b>Openclassrooms</b></a>
+                et également quelques débutants en vue.js sur
+                <a href="https://discord.com/channels/325477692906536972/325654285255704578" target="_blank" rel="noopener noreferrer"><b>Vue Land</b></a>
             </p>
             <nuxt-link class="nav-item" to="/pro">
                 <div class="icon-container">
@@ -86,7 +90,7 @@
                         Mentorat
                     </div>
                     <div class="sub-title">
-                        Openclassrooms
+                        Openclassrooms - VueLand
                     </div>
                 </div>
             </nuxt-link>
