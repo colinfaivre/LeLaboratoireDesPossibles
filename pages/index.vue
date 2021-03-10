@@ -47,7 +47,7 @@
             <p class="presentation-text">
                 Développeur front-end en freelance depuis 2017.
                 Je travaille essentiellement à distance sur vos projets d'applications web.
-                J'ai obtenu une certification de la part de Google qui valide mes compétences concernant le web mobile et je mentore les étudiants de la formation "Développeur web" sur openclassromms
+                J'ai obtenu une certification de la part de Google qui valide mes compétences concernant le web mobile et je mentore les étudiants de la formation "Développeur web" sur openclassrooms
             </p>
             <nuxt-link class="nav-item" to="/pro">
                 <div class="icon-container">
