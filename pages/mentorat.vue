@@ -38,7 +38,7 @@
             <li>Terminal</li>
             <li>Intégration maquette</li>
           </ul>
-        
+
         <br>
 
         <li><strong>Projet 3 : </strong> Dynamisez une page web avec des animations CSS</li>
@@ -48,7 +48,7 @@
           </ul>
 
         <br>
-        
+
         <li><strong>Projet 4 : </strong> Optimisez un site web existant</li>
           <ul>
             <li>SEO</li>
@@ -56,7 +56,7 @@
           </ul>
 
         <br>
-        
+
         <li><strong>Projet 5 : </strong> Construisez un site e-commerce</li>
           <ul>
             <li>Javascript</li>
@@ -64,7 +64,7 @@
           </ul>
 
         <br>
-        
+
         <li><strong>Projet 6 : </strong> Construisez une API sécurisée pour une application d'avis gastronomiques</li>
           <ul>
             <li>Node.js/Express/MongoDB</li>
@@ -73,14 +73,27 @@
           </ul>
 
         <br>
-        
+
         <li><strong>Projet 7 : </strong> Créez un réseau social d'entreprise</li>
           <ul>
             <li>MySQL</li>
             <li>Vue.js</li>
           </ul>
-        
+
       </ul>
+
+      <v-img
+        :src="require('@/assets/images/mentoring/vue_land.png')"
+        max-width="200px"
+        class="mx-auto mt-12 mb-2"
+      />
+
+      <br>
+
+      En tant que membre actif de la communauté Vue.js, je viens en aide à quelques débutant sur le channel discord
+      <a href="https://discord.com/channels/325477692906536972/325654285255704578" target="_blank" rel="noopener noreferrer"><b>Vue Land</b></a>.
+      C'est l'occasion pour moi de mieux comprendre Vue.js et de d'interroger ma pratique en venant en aide à d'autres développeurs.
+      C'est un grand plaisir de pouvoir rendre à la communauté ce qu'elle m'a donné au cours de ces dernières années.
     </div>
   </v-container>
 </template>
