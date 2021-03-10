@@ -328,7 +328,6 @@ const projects = [
         category: "pro",
         year: 2018,
         githubLink: null,
-        webLink: "http://optiquebeaubreuil.com/",
         customer: {
             type: "Optique Beaubreuil",
             location: "Limoges",
@@ -350,7 +349,6 @@ const projects = [
         category: "pro",
         year: 2018,
         githubLink: null,
-        webLink: "http://optiqueduhameau.com/",
         customer: {
             type: "Optique du hameau",
             location: "Limoges",
